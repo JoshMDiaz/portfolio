@@ -1,2 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
-@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+@import './scss/reset';
+
+// Body
+md-sidenav-container.mat-drawer-container {
+  height: 100vh;
+  width: 100vw;
+}
+.mat-drawer-content {
+  width: calc(100vw - 30px);
+  padding: 1em 15px;
+}
