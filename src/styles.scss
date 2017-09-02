@@ -3,11 +3,12 @@
 @import './scss/reset';
 
 // Body
-md-sidenav-container.mat-drawer-container {
-  height: 100vh;
-  width: 100vw;
+body {
+  font-family: 'Roboto', sans-serif;
+  background: #333;
+  font-size: 16px;
 }
-.mat-drawer-content {
-  width: calc(100vw - 30px);
-  padding: 1em 15px;
+.container {
+  max-width: 1200px;
+  margin: auto;
 }

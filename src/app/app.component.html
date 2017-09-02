@@ -1,13 +1,27 @@
-<md-sidenav-container>
-  <md-sidenav mode="over" opened="false" position="end" #sidenav>
-    <button type="button" (click)="sidenav.close()" md-button>Close</button>
-    <md-nav-list>
-      <a md-list-item href="page1.html">Page 1</a>
-      <a md-list-item href="page2.html">Page 2</a>
-      <a md-list-item href="page3.html">Page 3</a>
-    </md-nav-list>
-  </md-sidenav>
+<!-- Header here -->
+<!-- Logo -->
+<!-- Menu - maybe a hamburger in all screen sizes? -->
+<div class="banner">
+  <div class="rect rect-1"></div>
+  <div class="rect rect-2"></div>
+  <div class="rect rect-3"></div>
+  <div class="rect rect-4"></div>
+  <div class="rect rect-5"></div>
   <div class="container">
-    <app-header (navToggle)="sidenav.open()"></app-header>
+    <div class="banner-text">
+      <h2>Josh M Diaz</h2>
+      <h3>Design. Development. Experience.</h3>
+    </div>
   </div>
-</md-sidenav-container>
+</div>
+<div class="container">
+  <md-grid-list cols="4" rowHeight="100px">
+    <md-grid-tile
+      *ngFor="let tile of tiles"
+      [colspan]="tile.cols"
+      [rowspan]="tile.rows"
+      [style.background]="tile.color">
+      {{tile.text}}
+    </md-grid-tile>
+  </md-grid-list>
+</div>

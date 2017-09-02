@@ -5,7 +5,7 @@ import { AppComponent } from './app.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MdInputModule, MdMenuModule, MdSidenavModule, MdCardModule, MdGridListModule, MdTabsModule, MdButtonModule, MdIconModule, MdProgressSpinnerModule, MdDialogModule, MdSnackBarModule} from '@angular/material';
 import { RouterModule, Routes } from '@angular/router';
-import { HeaderComponent } from './header/header.component';
+import { FlexLayoutModule } from "@angular/flex-layout";
 
 // Routes
 const appRoutes: Routes = [
@@ -26,7 +26,6 @@ const appRoutes: Routes = [
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent
   ],
   imports: [
     BrowserModule,
