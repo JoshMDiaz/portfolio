@@ -8,20 +8,23 @@
   <div class="rect rect-4"></div>
   <div class="rect rect-5"></div>
   <div class="container">
-    <div class="banner-text">
-      <h2>Josh M Diaz</h2>
-      <h3>Design. Development. Experience.</h3>
+    <div class="banner-content-wrapper">
+      <div class="banner-content">
+        <h2>Josh M Diaz</h2>
+        <h3>Design. Development. Experience.</h3>
+        <button md-raised-button>Hire Me!</button>
+      </div>
     </div>
   </div>
 </div>
 <div class="container">
   <md-grid-list cols="4" rowHeight="100px">
     <md-grid-tile
-      *ngFor="let tile of tiles"
-      [colspan]="tile.cols"
-      [rowspan]="tile.rows"
-      [style.background]="tile.color">
-      {{tile.text}}
-    </md-grid-tile>
-  </md-grid-list>
+    *ngFor="let tile of tiles"
+    [colspan]="tile.cols"
+    [rowspan]="tile.rows"
+    [style.background]="tile.color">
+    {{tile.text}}
+  </md-grid-tile>
+</md-grid-list>
 </div>

@@ -6,12 +6,12 @@
   overflow-x: hidden;
   min-height: 100vh;
   display: flex;
+  background: $banner-color;
   .rect {
-    height: 100px;
+    height: 65px;
     width: 70vw;
     position: absolute;
     transform: rotate(-10deg) skew(35deg);
-    z-index: -1;
   }
   .rect-1 {
     background: linear-gradient(to right, darken($white-color, 30%), darken($white-color, 35%));
@@ -20,36 +20,49 @@
   .rect-2 {
     background: linear-gradient(to right, darken($white-color, 45%), darken($white-color, 40%));
     left: 15vw;
-    top: 100px;
+    top: 80px;
   }
   .rect-3 {
     background: linear-gradient(to right, darken($white-color, 50%), darken($white-color, 55%));
     left: -20vw;
-    top: 100px;
+    top: 80px;
   }
   .rect-4 {
     background: linear-gradient(to right, darken($white-color, 65%), darken($white-color, 60%));
     left: 30vw;
-    top: 180px;
+    top: 160px;
   }
   .rect-5 {
     background: linear-gradient(to right, darken($white-color, 70%), darken($white-color, 75%));
     left: -5vw;
-    top: 200px;
+    top: 170px;
   }
-  .banner-text {
+  .banner-content-wrapper {
+    position: absolute;
+    width: 400px;
+    left: calc(50vw - 200px);
+    top: calc(50vh - 100px);
+    height: 200px;
+  }
+  .banner-content {
+    z-index: 10;
     text-align: center;
     h2 {
       font-size: 2.5em;
       line-height: 1.1em;
       text-transform: uppercase;
-      letter-spacing: .3em;
+      letter-spacing: .2em;
     }
     h3 {
       margin-top: 1em;
       font-size: 1.1em;
       letter-spacing: .3em;
       line-height: 1.5em;
+    }
+    button {
+      color: $primary-text-color;
+      margin-top: 1em;
+      font-size: 1.2em;
     }
   }
 }
@@ -66,10 +79,29 @@
 
 @media only screen and (min-width: 768px) {
   .banner {
-    .banner-text {
-      text-align: center;
+    .rect {
+      height: 100px;
+    }
+    .rect-2 {
+      top: 100px;
+    }
+    .rect-3 {
+      top: 100px;
+    }
+    .rect-4 {
+      top: 180px;
+    }
+    .rect-5 {
+      top: 200px;
+    }
+    .banner-content-wrapper {
+      width: 700px;
+      left: calc(50vw - 350px);
+    }
+    .banner-content {
       h2 {
         font-size: 4em;
+        letter-spacing: .3em;
       }
       h3 {
         font-size: 1.7em;

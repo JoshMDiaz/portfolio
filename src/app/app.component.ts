@@ -10,10 +10,10 @@ export class AppComponent {
 
   constructor() {
     this.tiles = [
-      {text: 'One', cols: 3, rows: 2, color: 'lightblue'},
-      {text: 'Two', cols: 1, rows: 4, color: 'lightgreen'},
+      {text: 'My Work', cols: 3, rows: 2, color: 'lightblue'},
+      {text: 'Me', cols: 1, rows: 4, color: '#fff'},
       {text: 'Three', cols: 1, rows: 2, color: 'lightpink'},
-      {text: 'Four', cols: 2, rows: 2, color: '#DDBDF1'},
+      {text: 'Reach Out', cols: 2, rows: 2, color: '#DDBDF1'},
     ];
   }
 
