@@ -14,21 +14,21 @@
     transform: rotate(-10deg) skew(35deg);
   }
   .rect-1 {
-    background: linear-gradient(to right, darken($white-color, 30%), darken($white-color, 35%));
+    background: linear-gradient(to right, $banner-color, $banner-color, darken($white-color, 50%), darken($white-color, 55%));
     left: -10vw;
   }
   .rect-2 {
-    background: linear-gradient(to right, darken($white-color, 45%), darken($white-color, 40%));
+    background: linear-gradient(to right, $banner-color, darken($white-color, 45%), darken($white-color, 40%));
     left: 15vw;
     top: 80px;
   }
   .rect-3 {
-    background: linear-gradient(to right, darken($white-color, 50%), darken($white-color, 55%));
+    background: linear-gradient(to right, darken($white-color, 30%), darken($white-color, 35%));
     left: -20vw;
     top: 80px;
   }
   .rect-4 {
-    background: linear-gradient(to right, darken($white-color, 65%), darken($white-color, 60%));
+    background: linear-gradient(to right, $banner-color, darken($white-color, 65%), darken($white-color, 60%));
     left: 30vw;
     top: 160px;
   }

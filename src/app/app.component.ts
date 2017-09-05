@@ -1,4 +1,6 @@
 import { Component, ViewChild } from '@angular/core';
+import {MdDialog, MD_DIALOG_DATA} from '@angular/material';
+import { ContactModalComponent } from './contact-modal/contact-modal.component';
 
 @Component({
   selector: 'app-root',
@@ -8,7 +10,8 @@ import { Component, ViewChild } from '@angular/core';
 export class AppComponent {
   tiles: any;
 
-  constructor() {
+  constructor(public dialog: MdDialog) {
+
     this.tiles = [
       {text: 'My Work', cols: 3, rows: 2, color: 'lightblue'},
       {text: 'Me', cols: 1, rows: 4, color: '#fff'},
@@ -17,4 +20,11 @@ export class AppComponent {
     ];
   }
 
+  openContactModal() {
+    this.dialog.open(ContactModalComponent, {
+      data: {
+        test: 'this is a test'
+      }
+    });
+  }
 }

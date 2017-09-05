@@ -1,6 +1,7 @@
 <!-- Header here -->
 <!-- Logo -->
 <!-- Menu - maybe a hamburger in all screen sizes? -->
+<app-header></app-header>
 <div class="banner">
   <div class="rect rect-1"></div>
   <div class="rect rect-2"></div>
@@ -12,7 +13,7 @@
       <div class="banner-content">
         <h2>Josh M Diaz</h2>
         <h3>Design. Development. Experience.</h3>
-        <button md-raised-button>Hire Me!</button>
+        <button md-raised-button (click)="openContactModal()">Hire Me!</button>
       </div>
     </div>
   </div>
