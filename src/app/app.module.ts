@@ -7,6 +7,8 @@ import {MdInputModule, MdMenuModule, MdSidenavModule, MdCardModule, MdGridListMo
 import { RouterModule, Routes } from '@angular/router';
 import { HeaderComponent } from './header/header.component';
 import { ContactModalComponent } from './contact-modal/contact-modal.component';
+import { FooterComponent } from './footer/footer.component';
+import { ContactButtonComponent } from './contact-button/contact-button.component';
 
 // Routes
 const appRoutes: Routes = [
@@ -29,6 +31,8 @@ const appRoutes: Routes = [
     AppComponent,
     HeaderComponent,
     ContactModalComponent,
+    FooterComponent,
+    ContactButtonComponent,
   ],
   imports: [
     BrowserModule,

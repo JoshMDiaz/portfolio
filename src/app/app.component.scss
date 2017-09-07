@@ -54,18 +54,37 @@
       letter-spacing: .2em;
     }
     h3 {
-      margin-top: 1em;
+      margin: 1em 0;
       font-size: 1.1em;
       letter-spacing: .3em;
       line-height: 1.5em;
-    }
-    button {
-      color: $primary-text-color;
-      margin-top: 1em;
-      font-size: 1.2em;
+      font-weight: 300;
     }
   }
 }
+app-header {
+  display: flex;
+  justify-content: center;
+}
+.overlay {
+  color: $white-color;
+  font-size: 2em;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  &.work {
+    background: linear-gradient(to bottom, $tile-work-color, lighten($tile-work-color, 10%));
+  }
+  &.me {
+    background: linear-gradient(to bottom, $tile-me-color, lighten($tile-me-color, 10%));
+  }
+  &.reach-out {
+    background: linear-gradient(to bottom, $tile-reach-out-color, lighten($tile-reach-out-color, 10%));
+  }
+}
+
 
 @media only screen and (max-width: 767px) {
   .mat-grid-tile {
@@ -74,6 +93,7 @@
     left: 0 !important;
     width: 100% !important;
     position: relative;
+    margin: 1em 0;
   }
 }
 
@@ -117,5 +137,26 @@
         font-size: 1.7em;
       }
     }
+  }
+  .overlay {
+    font-size: 3em;
+    transform: translateX(100%);
+    transition: .3s ease;
+  }
+  .mat-grid-tile {
+    overflow: hidden;
+    cursor: pointer;
+    &:hover {
+      .overlay {
+        transform: translateX(0%);
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1201px) {
+  .list-card {
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.14), 0 4px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 5px 0 rgba(0, 0, 0, 0.12);
+    margin: 3em 0;
   }
 }
