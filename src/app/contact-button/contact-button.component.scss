@@ -3,10 +3,10 @@ button {
   font-size: 1.9em;
   background: none;
   border: 2px solid transparent;
-  border-image: linear-gradient(to right, #4fcad6, #32d08e);
+  border-image: linear-gradient(to right, $blue-color, $green-color);
   border-image-slice: 1;
   padding: 15px 30px;
-  background: -webkit-linear-gradient(right, #4fcad6, #32d08e);
+  background: -webkit-linear-gradient(right, $blue-color, $green-color);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   letter-spacing: 1px;

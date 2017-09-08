@@ -3,18 +3,19 @@ footer {
   background: $primary-text-color;
   padding: 20px;
   text-align: center;
-  color: $white-color;
+  color: darken($white-color, 50%);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 .cta-section {
   padding: 50px;
+  background: url('../../assets/footer_bg.png');
   text-align: center;
-  background: lighten($primary-text-color, 10%);
   h3, h4 {
     color: $white-color;
     margin-bottom: 30px;
     letter-spacing: 1px;
+    z-index: 10;
   }
   h3 {
     font-size: 2em;
