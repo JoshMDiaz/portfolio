@@ -1,8 +1,16 @@
 <header class="container">
-  <img src="assets/logo.svg">
+  <img src="assets/logo.svg" routerLink="/">
   <div (click)="toggleMenu()" id="nav-icon" [ngClass]="showMenu ? 'open' : ''">
     <span></span>
     <span></span>
     <span></span>
   </div>
 </header>
+<nav [ngClass]="showMenu ? 'show-menu' : ''">
+  <img src="../../assets/me.jpg" alt="Josh Diaz" routerLink="/">
+  <ul>
+    <li *ngFor="let item of menuItems">
+      <a routerLink="{{item.link}}" routerLinkActive="active">{{item.name}}</a>
+    </li>
+  </ul>
+</nav>

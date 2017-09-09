@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
   showMenu: boolean;
+  menuItems: Array<{}>;
 
   constructor() {
     this.showMenu = false;
@@ -17,6 +18,23 @@ export class HeaderComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.menuItems = [
+      {
+        id: 1,
+        link: '/my-work',
+        name: 'My Work'
+      },
+      {
+        id: 2,
+        link: '/about-me',
+        name: 'This is Me'
+      },
+      {
+        id: 3,
+        link: '/reach-out',
+        name: 'Reach Out'
+      }
+    ]
   }
 
 }

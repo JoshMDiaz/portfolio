@@ -76,3 +76,36 @@ header {
     left: 50%;
   }
 }
+nav {
+  position: absolute;
+  z-index: 100;
+  background: linear-gradient(150deg, $primary-text-color 25%, lighten($primary-text-color, 15%) 65%, lighten($primary-text-color, 25%) 85%);
+  width: 100%;
+  text-align: center;
+  font-size: 2em;
+  height: calc(100vh - 70px);
+  top: 70px;
+  right: -100vw;
+  transition: .5s ease-in-out;
+  &.show-menu {
+    right: 0;
+  }
+  a {
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+    color: lighten($primary-text-color, 40%);
+    &.active {
+      background: -webkit-linear-gradient(150deg, $blue-color 10%, $green-color 70%);
+      background: linear-gradient(150deg, $blue-color 10%, $green-color 70%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+  img {
+    width: 80vw;
+    max-width: 450px;
+    clip-path: circle(85px at center);
+    margin: 1em;
+  }
+}
