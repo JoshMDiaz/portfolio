@@ -1,13 +1,6 @@
-<!-- Header here -->
-<!-- Logo -->
-<!-- Menu - maybe a hamburger in all screen sizes? -->
 <app-header></app-header>
 <div class="banner">
-  <div class="rect rect-1"></div>
-  <div class="rect rect-2"></div>
-  <div class="rect rect-3"></div>
-  <div class="rect rect-4"></div>
-  <div class="rect rect-5"></div>
+  <stripes-bg page="home"></stripes-bg>
   <div class="container">
     <div class="banner-content-wrapper">
       <div class="banner-content">
@@ -23,12 +16,7 @@
   <md-icon class="section-header-icon">keyboard_arrow_down</md-icon>
   <div class="list-card">
     <md-grid-list cols="3" rows="1" rowHeight="300px">
-      <md-grid-tile
-        *ngFor="let tile of tiles"
-        [colspan]="1"
-        [style.background]="tile.img || tile.color"
-        [style.background-repeat]="'no-repeat'"
-        [style.background-position]="'50% 100%'">
+      <md-grid-tile *ngFor="let tile of tiles" [colspan]="1" [style.background]="tile.img || tile.color" [style.background-repeat]="'no-repeat'" [style.background-position]="'50% 100%'">
         <div class="overlay {{tile.overlayClass}}">
           {{tile.text}}
         </div>

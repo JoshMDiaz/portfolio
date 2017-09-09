@@ -1,0 +1,163 @@
+// Stripes BG
+#stripes,#stripes span {
+  position: absolute
+}
+
+#stripes {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  transform: skewY(-12deg);
+  transform-origin: 0;
+  &.home {
+    background: linear-gradient(150deg,#5e5e5e 15%,#454545 70%,#282828 94%);
+    :nth-child(1) {
+      background: #504e4e;
+    }
+    :nth-child(2) {
+      background: #363434;
+    }
+    :nth-child(3) {
+      background: #1a1919;
+    }
+  }
+  // &.my-work {
+  //   background: linear-gradient(150deg,#53f 15%,#05d5ff 70%,#a6ffcb 94%);
+  //   :nth-child(1) {
+  //     background: #4c29ff;
+  //   }
+  //   :nth-child(2) {
+  //     background: #2be7ff;
+  //   }
+  //   :nth-child(3) {
+  //     background: #a1ffc8;
+  //   }
+  // }
+  // &.about {
+  //   background: linear-gradient(150deg,#53f 15%,#05d5ff 70%,#a6ffcb 94%);
+  //   :nth-child(1) {
+  //     background: #4c29ff;
+  //   }
+  //   :nth-child(2) {
+  //     background: #2be7ff;
+  //   }
+  //   :nth-child(3) {
+  //     background: #a1ffc8;
+  //   }
+  // }
+  // &.reach-out {
+  //   background: linear-gradient(150deg,#53f 15%,#05d5ff 70%,#a6ffcb 94%);
+  //   :nth-child(1) {
+  //     background: #4c29ff;
+  //   }
+  //   :nth-child(2) {
+  //     background: #2be7ff;
+  //   }
+  //   :nth-child(3) {
+  //     background: #a1ffc8;
+  //   }
+  // }
+  span {
+    height: 40px
+  }
+  :nth-child(1) {
+    width: 50%;
+    left: 50%;
+    top: 40px;
+  }
+  :nth-child(2) {
+    width: 14%;
+    right: 0;
+    bottom: 40px;
+  }
+  :nth-child(3) {
+    width: 25%;
+    bottom: 0;
+    right: 0;
+  }
+}
+
+
+@media (min-width: 670px) {
+  #stripes {
+    &.home {
+      background: linear-gradient(150deg,#5e5e5e 15%,#454545 70%,#282828 94%);
+      :nth-child(1) {
+        background: #504e4e;
+      }
+      :nth-child(2) {
+        background: #363434;
+      }
+      :nth-child(3) {
+        background: #1a1919;
+      }
+    }
+    span {
+      height:150px
+    }
+    :nth-child(1) {
+      top: 0;
+    }
+    :nth-child(2) {
+      width: 16.66667%;
+      top: 300px;
+      bottom: auto;
+    }
+    :nth-child(3) {
+      width: 33.33333%;
+      right: auto;
+    }
+  }
+
+}
+
+@media (min-width: 880px) {
+  #stripes {
+    &.home {
+      background: linear-gradient(150deg,#5e5e5e 15%,#454545 70%,#282828 94%);
+      :nth-child(1) {
+        background: #504e4e;
+      }
+      :nth-child(2) {
+        background: #363434;
+      }
+      :nth-child(3) {
+        background: #1a1919;
+      }
+      :nth-child(4) {
+        background: #817e7e;
+      }
+      :nth-child(5) {
+        background: #3b3939;
+      }
+    }
+    span {
+      height:190px
+    }
+    :nth-child(1) {
+      width: 33.33333%;
+      left: -16.66666%;
+    }
+    :nth-child(2) {
+      width: 33.33333%;
+      top: 0;
+      left: 16.66666%;
+      right: auto;
+    }
+    :nth-child(3) {
+      width: 33.33333%;
+      left: 49.99999%;
+      bottom: auto;
+    }
+    :nth-child(4) {
+      width: 33.33333%;
+      top: 380px;
+      right: -16.66666%;
+    }
+    :nth-child(5) {
+      width: 33.33333%;
+      bottom: 0;
+    }
+  }
+
+}

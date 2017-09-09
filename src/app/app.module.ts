@@ -10,10 +10,14 @@ import { HeaderComponent } from './header/header.component';
 import { ContactModalComponent } from './contact-modal/contact-modal.component';
 import { FooterComponent } from './footer/footer.component';
 import { ContactButtonComponent } from './contact-button/contact-button.component';
+import { StripesBgComponent } from './stripes-bg/stripes-bg.component';
+import { AboutMeComponent } from './about-me/about-me.component';
+import { MyWorkComponent } from './my-work/my-work.component';
+import { ReachOutComponent } from './reach-out/reach-out.component';
 
 // Routes
 const appRoutes: Routes = [
-  // { path: 'crisis-center', component: CrisisListComponent },
+  { path: 'about-me', component: AboutMeComponent },
   // { path: 'hero/:id',      component: HeroDetailComponent },
   // {
   //   path: 'heroes',
@@ -33,13 +37,17 @@ const appRoutes: Routes = [
     HeaderComponent,
     FooterComponent,
     ContactModalComponent,
-    ContactButtonComponent
+    ContactButtonComponent,
+    StripesBgComponent,
+    AboutMeComponent,
+    MyWorkComponent,
+    ReachOutComponent
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot(
       appRoutes,
-      { enableTracing: true }
+      { enableTracing: true } // <-- debugging purposes only
     ),
     BrowserAnimationsModule,
     FormsModule,
