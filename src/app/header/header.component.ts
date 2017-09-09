@@ -22,17 +22,20 @@ export class HeaderComponent implements OnInit {
       {
         id: 1,
         link: '/my-work',
-        name: 'My Work'
+        name: 'My Work',
+        className: 'my-work'
       },
       {
         id: 2,
         link: '/about-me',
-        name: 'This is Me'
+        name: 'This is Me',
+        className: 'about-me'
       },
       {
         id: 3,
         link: '/reach-out',
-        name: 'Reach Out'
+        name: 'Reach Out',
+        className: 'reach-out'
       }
     ]
   }

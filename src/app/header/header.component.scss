@@ -96,10 +96,24 @@ nav {
     text-decoration: none;
     color: lighten($primary-text-color, 40%);
     &.active {
-      background: -webkit-linear-gradient(150deg, $blue-color 10%, $green-color 70%);
-      background: linear-gradient(150deg, $blue-color 10%, $green-color 70%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+      &.my-work {
+        background: -webkit-linear-gradient(150deg,#f24b4b 15%,#f4437d 70%,#ffa6e9 94%);
+        background: linear-gradient(150deg,#f24b4b 15%,#f4437d 70%,#ffa6e9 94%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      &.about-me {
+        background: -webkit-linear-gradient(150deg,#ff6a33 15%,#ffaa05 70%,#f5ffa6 94%);
+        background: linear-gradient(150deg,#ff6a33 15%,#ffaa05 70%,#f5ffa6 94%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      &.reach-out {
+        background: -webkit-linear-gradient(150deg,#53f 15%,#05d5ff 70%,#a6ffcb 94%);
+        background: linear-gradient(150deg,#53f 15%,#05d5ff 70%,#a6ffcb 94%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
     }
   }
   img {

@@ -22,27 +22,27 @@
     }
   }
   &.my-work {
-    background: linear-gradient(150deg,#53f 15%,#05d5ff 70%,#a6ffcb 94%);
+    background: linear-gradient(150deg,#f24baf 15%,#f44343 70%,#ffa6a6 94%);
     :nth-child(1) {
-      background: #4c29ff;
+      background: #f24b4b;
     }
     :nth-child(2) {
-      background: #2be7ff;
+      background: #f46343;
     }
     :nth-child(3) {
-      background: #a1ffc8;
+      background: #ffb8a6;
     }
   }
   &.about-me {
-    background: linear-gradient(150deg,#53f 15%,#05d5ff 70%,#a6ffcb 94%);
+    background: linear-gradient(150deg,#ff6a33 15%,#ffaa05 70%,#f5ffa6 94%);
     :nth-child(1) {
-      background: #4c29ff;
+      background: #ff8933;
     }
     :nth-child(2) {
-      background: #2be7ff;
+      background: #ffc105;
     }
     :nth-child(3) {
-      background: #a1ffc8;
+      background: #ffe9a6;
     }
   }
   &.reach-out {
@@ -92,6 +92,42 @@
         background: #1a1919;
       }
     }
+    &.my-work {
+      background: linear-gradient(150deg,#f24baf 15%,#f44343 70%,#ffa6a6 94%);
+      :nth-child(1) {
+        background: #f24b4b;
+      }
+      :nth-child(2) {
+        background: #f46343;
+      }
+      :nth-child(3) {
+        background: #ffb8a6;
+      }
+    }
+    &.about-me {
+      background: linear-gradient(150deg,#ff6a33 15%,#ffaa05 70%,#f5ffa6 94%);
+      :nth-child(1) {
+        background: #ff8933;
+      }
+      :nth-child(2) {
+        background: #ffc105;
+      }
+      :nth-child(3) {
+        background: #ffe9a6;
+      }
+    }
+    &.reach-out {
+      background: linear-gradient(150deg,#53f 15%,#05d5ff 70%,#a6ffcb 94%);
+      :nth-child(1) {
+        background: #4c29ff;
+      }
+      :nth-child(2) {
+        background: #2be7ff;
+      }
+      :nth-child(3) {
+        background: #a1ffc8;
+      }
+    }
     span {
       height:150px
     }
@@ -129,6 +165,60 @@
       }
       :nth-child(5) {
         background: #3b3939;
+      }
+    }
+    &.my-work {
+      background: linear-gradient(150deg,#f24b4b 15%,#f4437d 70%,#ffa6e9 94%);
+      :nth-child(1) {
+        background: #f2734b;
+      }
+      :nth-child(2) {
+        background: #f4437d;
+      }
+      :nth-child(3) {
+        background: #ffa6e9;
+      }
+      :nth-child(4) {
+        background: #f2824b;
+      }
+      :nth-child(5) {
+        background: #f443b2;
+      }
+    }
+    &.about-me {
+      background: linear-gradient(150deg,#ff6a33 15%,#ffaa05 70%,#ffeea6 94%);
+      :nth-child(1) {
+        background: #ff8933;
+      }
+      :nth-child(2) {
+        background: #ffc105;
+      }
+      :nth-child(3) {
+        background: #ffe9a6;
+      }
+      :nth-child(4) {
+        background: #ffdf05;
+      }
+      :nth-child(5) {
+        background: #fff6a6;
+      }
+    }
+    &.reach-out {
+      background: linear-gradient(150deg,#53f 15%,#05d5ff 70%,#a6ffcb 94%);
+      :nth-child(1) {
+        background: #4c29ff;
+      }
+      :nth-child(2) {
+        background: #2be7ff;
+      }
+      :nth-child(3) {
+        background: #a1ffc8;
+      }
+      :nth-child(4) {
+        background: #2bb9ff;
+      }
+      :nth-child(5) {
+        background: #a1ffd5;
       }
     }
     span {

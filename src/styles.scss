@@ -16,6 +16,11 @@ body {
   margin: auto;
 }
 
+app-header {
+  display: flex;
+  justify-content: center;
+}
+
 // Buttons
 button {
   transition-property: all !important;
@@ -28,6 +33,7 @@ button {
   }
 }
 
+// Sections
 .section-header {
   font-size: 2em;
   margin: 1em;
