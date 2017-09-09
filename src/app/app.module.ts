@@ -1,9 +1,10 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {MdInputModule, MdMenuModule, MdSidenavModule, MdCardModule, MdGridListModule, MdTabsModule, MdButtonModule, MdIconModule, MdProgressSpinnerModule, MdDialogModule, MdSnackBarModule} from '@angular/material';
+import {MdInputModule, MdMenuModule, MdSidenavModule, MdCardModule, MdGridListModule, MdTabsModule, MdButtonModule, MdIconModule, MdProgressSpinnerModule, MdDialogModule, MdSnackBarModule, MdRadioModule} from '@angular/material';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
 import { HeaderComponent } from './header/header.component';
 import { ContactModalComponent } from './contact-modal/contact-modal.component';
@@ -30,9 +31,9 @@ const appRoutes: Routes = [
   declarations: [
     AppComponent,
     HeaderComponent,
-    ContactModalComponent,
     FooterComponent,
-    ContactButtonComponent,
+    ContactModalComponent,
+    ContactButtonComponent
   ],
   imports: [
     BrowserModule,
@@ -41,6 +42,8 @@ const appRoutes: Routes = [
       { enableTracing: true }
     ),
     BrowserAnimationsModule,
+    FormsModule,
+    ReactiveFormsModule,
     MdInputModule,
     MdMenuModule,
     MdSidenavModule,
@@ -51,9 +54,16 @@ const appRoutes: Routes = [
     MdIconModule,
     MdProgressSpinnerModule,
     MdDialogModule,
-    MdSnackBarModule
+    MdSnackBarModule,
+    MdRadioModule
+  ],
+  entryComponents: [
+    ContactModalComponent
   ],
   providers: [],
+  schemas: [
+    CUSTOM_ELEMENTS_SCHEMA
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

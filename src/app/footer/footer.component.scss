@@ -10,21 +10,35 @@ footer {
 .cta-section {
   padding: 50px;
   background: url('../../assets/footer_bg.png');
-  text-align: center;
   h3, h4 {
     color: $white-color;
     margin-bottom: 30px;
     letter-spacing: 1px;
-    z-index: 10;
-  }
-  h3 {
-    font-size: 2em;
-    font-weight: 500;
     line-height: 1.3em;
   }
+  h3 {
+    font-size: 1.7em;
+    font-weight: 500;
+  }
   h4 {
-    font-size: 1.5em;
+    font-size: 1.3em;
     font-weight: 300;
     opacity: .7;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .cta-section {
+    text-align: center;
+    h3 {
+      font-size: 2em;
+      font-weight: 500;
+      line-height: 1.3em;
+    }
+    h4 {
+      font-size: 1.5em;
+      font-weight: 300;
+      opacity: .7;
+    }
   }
 }
