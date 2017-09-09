@@ -1,0 +1,27 @@
+<app-header></app-header>
+<div class="banner">
+  <stripes-bg page="home"></stripes-bg>
+  <div class="container">
+    <div class="banner-content-wrapper">
+      <div class="banner-content">
+        <h2>Josh M Diaz</h2>
+        <h3>Design. Development. Experience.</h3>
+        <contact-button></contact-button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <h2 class="section-header">Take a Look Around</h2>
+  <md-icon class="section-header-icon">keyboard_arrow_down</md-icon>
+  <div class="list-card">
+    <md-grid-list cols="3" rows="1" rowHeight="300px">
+      <md-grid-tile *ngFor="let tile of tiles" [colspan]="1" [style.background]="tile.img || tile.color" [style.background-repeat]="'no-repeat'" [style.background-position]="'50% 100%'">
+        <div class="overlay {{tile.overlayClass}}">
+          {{tile.text}}
+        </div>
+      </md-grid-tile>
+    </md-grid-list>
+  </div>
+</div>
+<app-footer></app-footer>

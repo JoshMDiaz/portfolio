@@ -1,0 +1,137 @@
+@import '../../scss/colors';
+
+.banner {
+  color: $white-color;
+  position: relative;
+  overflow-x: hidden;
+  min-height: 100vh;
+  display: flex;
+  .banner-content-wrapper {
+    position: absolute;
+    width: 400px;
+    left: calc(50vw - 200px);
+    top: calc(50vh - 100px);
+    height: 200px;
+  }
+  .banner-content {
+    z-index: 10;
+    text-align: center;
+    animation: .75s ease-in-out zoomIn;
+    h2 {
+      font-size: 2em;
+      line-height: 1.1em;
+      text-transform: uppercase;
+      letter-spacing: .2em;
+    }
+    h3 {
+      margin: 1em 0;
+      font-size: 1.1em;
+      letter-spacing: .3em;
+      line-height: 1.5em;
+      font-weight: 300;
+    }
+  }
+}
+app-header {
+  display: flex;
+  justify-content: center;
+}
+.overlay {
+  color: $white-color;
+  font-size: 2em;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  &.work {
+    background: linear-gradient(to bottom, $tile-work-color, lighten($tile-work-color, 10%));
+  }
+  &.me {
+    background: linear-gradient(to bottom, $tile-me-color, lighten($tile-me-color, 10%));
+  }
+  &.reach-out {
+    background: linear-gradient(to bottom, $tile-reach-out-color, lighten($tile-reach-out-color, 10%));
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .mat-grid-tile {
+    height: 200px !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    position: relative;
+    margin: 1em 0;
+    &:first-child, &:last-child {
+      background-position: 100% !important;
+      background-size: cover !important;
+    }
+  }
+  .mat-grid-list {
+    display: initial;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .banner {
+    .banner-content {
+      h2 {
+        font-size: 2.8em;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .banner {
+    .banner-content-wrapper {
+      width: 700px;
+      left: calc(50vw - 350px);
+    }
+    .banner-content {
+      h2 {
+        font-size: 4em;
+        letter-spacing: .3em;
+      }
+      h3 {
+        font-size: 1.7em;
+      }
+    }
+  }
+  .overlay {
+    font-size: 3em;
+    transform: translateX(110%);
+    transition: .3s ease;
+  }
+  .mat-grid-tile {
+    overflow: hidden;
+    cursor: pointer;
+    &:hover {
+      .overlay {
+        transform: translateX(0%);
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1201px) {
+  .list-card {
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.14), 0 4px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 5px 0 rgba(0, 0, 0, 0.12);
+    margin: 3em 0;
+  }
+}
+
+@keyframes zoomIn {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  80% {
+    opacity: 1;
+    transform: scale(1.15);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
