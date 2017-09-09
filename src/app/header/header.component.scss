@@ -32,7 +32,6 @@ header {
     height: 4px;
     width: 100%;
     background: $white-color;
-    border-radius: 9px;
     opacity: 1;
     left: 0;
     -webkit-transform: rotate(0deg);
@@ -46,6 +45,7 @@ header {
   }
   span:nth-child(1) {
     top: 0px;
+    left: -10px;
   }
   span:nth-child(2),span:nth-child(3) {
     top: 10px;

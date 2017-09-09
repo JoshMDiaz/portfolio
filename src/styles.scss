@@ -31,8 +31,17 @@ button {
   font-size: 2em;
   margin: 1em;
   text-align: center;
-  letter-spacing: .1em;
+  letter-spacing: .05em;
+}
+.section-header-icon {
+  font-size: 3em;
+  display: block !important;
+  margin: -20px auto 30px;
+  text-align: center;
 }
 
 @media only screen and (min-width: 768px) {
+  .section-header-icon {
+    margin: -20px auto 20px;
+  }
 }
