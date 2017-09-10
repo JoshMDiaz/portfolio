@@ -1,0 +1,12 @@
+<div class="banner">
+  <stripes-bg page="{{page}}"></stripes-bg>
+  <div class="container">
+    <div class="banner-content-wrapper">
+      <div class="banner-content">
+        <h2>{{mainBannerText}}</h2>
+        <h3>{{secondaryBannerText}}</h3>
+        <contact-button *ngIf="page === 'home' || page === 'reach-out'"></contact-button>
+      </div>
+    </div>
+  </div>
+</div>

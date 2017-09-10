@@ -21,6 +21,7 @@ import { ContactButtonComponent } from './contact-button/contact-button.componen
 import { StripesBgComponent } from './stripes-bg/stripes-bg.component';
 import { MyWorkDetailComponent } from './my-work-detail/my-work-detail.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { BannerComponent } from './banner/banner.component';
 
 // Routes
 const appRoutes: Routes = [
@@ -49,13 +50,14 @@ const appRoutes: Routes = [
     ReachOutComponent,
     HomeComponent,
     MyWorkDetailComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    BannerComponent
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot(
       appRoutes,
-      { enableTracing: true } // <-- debugging purposes only
+      // { enableTracing: true } // <-- debugging purposes only
     ),
     BrowserAnimationsModule,
     FormsModule,

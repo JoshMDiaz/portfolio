@@ -11,6 +11,7 @@ header {
   align-items: center;
   img {
     height: 30px;
+    cursor: pointer;
   }
 }
 #nav-icon {
@@ -97,8 +98,8 @@ nav {
     color: lighten($primary-text-color, 40%);
     &.active {
       &.my-work {
-        background: -webkit-linear-gradient(150deg,#f24b4b 15%,#f4437d 70%,#ffa6e9 94%);
-        background: linear-gradient(150deg,#f24b4b 15%,#f4437d 70%,#ffa6e9 94%);
+        background: -webkit-linear-gradient(150deg,#9b4be3 15%,#7857fc 70%,#b8cffc 94%);
+        background: linear-gradient(150deg,#9b4be3 15%,#7857fc 70%,#b8cffc 94%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
       }

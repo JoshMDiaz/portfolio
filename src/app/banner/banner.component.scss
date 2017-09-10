@@ -1,0 +1,76 @@
+@import '../../scss/colors';
+
+.banner {
+  color: $white-color;
+  position: relative;
+  overflow-x: hidden;
+  min-height: 100vh;
+  display: flex;
+  .banner-content-wrapper {
+    position: absolute;
+    width: 400px;
+    left: calc(50vw - 200px);
+    top: calc(50vh - 100px);
+    height: 200px;
+  }
+  .banner-content {
+    z-index: 10;
+    text-align: center;
+    animation: .75s ease-in-out zoomIn;
+    h2 {
+      font-size: 2em;
+      line-height: 1.1em;
+      text-transform: uppercase;
+      letter-spacing: .2em;
+    }
+    h3 {
+      margin: 1em 0;
+      font-size: 1.1em;
+      letter-spacing: .3em;
+      line-height: 1.5em;
+      font-weight: 300;
+    }
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .banner {
+    .banner-content {
+      h2 {
+        font-size: 2.8em;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .banner {
+    .banner-content-wrapper {
+      width: 700px;
+      left: calc(50vw - 350px);
+    }
+    .banner-content {
+      h2 {
+        font-size: 4em;
+        letter-spacing: .3em;
+      }
+      h3 {
+        font-size: 1.7em;
+      }
+    }
+  }
+}
+
+@keyframes zoomIn {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  80% {
+    opacity: 1;
+    transform: scale(1.15);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
