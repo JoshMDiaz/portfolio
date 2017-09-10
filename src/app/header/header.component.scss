@@ -1,14 +1,21 @@
 @import '../../scss/colors';
 
 header {
-  position: absolute;
-  z-index: 10;
+  position: fixed;
+  z-index: 1000;
   top: 0;
   padding: 20px 30px;
   width: calc(100vw - 60px);
   display: flex;
   justify-content: space-between;
   align-items: center;
+  transition: .5s ease-in-out;
+  &.dark-header {
+    background: $primary-text-color;
+  }
+  &.page-scroll-header {
+    top: -100vh;
+  }
   img {
     height: 30px;
     cursor: pointer;
@@ -78,25 +85,24 @@ header {
   }
 }
 nav {
-  position: absolute;
+  position: fixed;
   z-index: 100;
   background: linear-gradient(150deg, $primary-text-color 25%, lighten($primary-text-color, 15%) 65%, lighten($primary-text-color, 25%) 85%);
   width: 100%;
   text-align: center;
   font-size: 2em;
-  height: calc(100vh - 70px);
-  top: 70px;
-  right: -100vw;
+  height: 100vh;
+  top: -100vh;
   transition: .5s ease-in-out;
   &.show-menu {
-    right: 0;
+    top: 0;
   }
   a {
     display: block;
     padding: 20px;
     text-decoration: none;
     color: lighten($primary-text-color, 40%);
-    &.active {
+    &.active, &:hover {
       &.my-work {
         background: -webkit-linear-gradient(150deg,#9b4be3 15%,#7857fc 70%,#b8cffc 94%);
         background: linear-gradient(150deg,#9b4be3 15%,#7857fc 70%,#b8cffc 94%);
@@ -118,9 +124,15 @@ nav {
     }
   }
   img {
-    width: 80vw;
-    max-width: 450px;
-    clip-path: circle(85px at center);
-    margin: 1em;
+    max-width: 180px;
+    margin: 3em 0 1em;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  nav {
+    img {
+      margin: 2em 0 1em;
+    }
   }
 }

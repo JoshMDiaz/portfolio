@@ -1,20 +1,50 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, NgZone } from '@angular/core';
 
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
-  styleUrls: ['./header.component.scss']
+  styleUrls: ['./header.component.scss'],
+  host: {
+    '(window:scroll)': 'updateHeader($event)'
+  }
 })
 export class HeaderComponent implements OnInit {
   showMenu: boolean;
   menuItems: Array<{}>;
+  isScrolled = false;
+  currPos: any = 0;
+  changePos: Number = 100;
+  lastScrollTop: number = 0;
+  direction: string = "";
 
-  constructor() {
+  constructor(lc: NgZone) {
     this.showMenu = false;
+    window.onscroll = () => {
+      let st = window.pageYOffset;
+      let dir = '';
+      if (st > this.lastScrollTop) {
+        dir = "down";
+      } else {
+        dir = "up";
+      }
+      this.lastScrollTop = st;
+      lc.run(() => {
+        this.direction = dir;
+      });
+    };
   }
 
   toggleMenu() {
     this.showMenu = !this.showMenu;
+  }
+
+  updateHeader(evt) {
+    this.currPos = (window.pageYOffset || evt.target.scrollTop) - (evt.target.clientTop || 0);
+    if (this.currPos >= 100 && this.direction === 'down') {
+      this.isScrolled = true;
+    } else {
+      this.isScrolled = false;
+    }
   }
 
   ngOnInit() {
