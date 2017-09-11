@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="42px" viewBox="0 0 48 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+    <title>Artboard</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" fill-rule="nonzero" fill="#FFFFFF">
+            <g id="if_Streamline-05_185024">
+                <path d="M44,38 L4,38 C1.794,38 0,36.126 0,33.823 L0,4.177 C0,1.874 1.794,0 4,0 L44,0 C46.206,0 48,1.874 48,4.177 L48,33.823 C48,36.126 46.206,38 44,38 Z M4,2 C2.897,2 2,2.977 2,4.177 L2,33.823 C2,35.023 2.897,36 4,36 L44,36 C45.103,36 46,35.023 46,33.823 L46,4.177 C46,2.977 45.103,2 44,2 L4,2 Z" id="Shape"></path>
+                <path d="M38,42 L10,42 C9.448,42 9,41.552 9,41 C9,40.448 9.448,40 10,40 L38,40 C38.552,40 39,40.448 39,41 C39,41.552 38.552,42 38,42 Z" id="Shape"></path>
+                <path d="M24,42 C23.448,42 23,41.552 23,41 L23,37 C23,36.448 23.448,36 24,36 C24.552,36 25,36.448 25,37 L25,41 C25,41.552 24.552,42 24,42 Z" id="Shape"></path>
+                <circle id="Oval" cx="24" cy="33" r="2"></circle>
+                <rect id="Rectangle-path" x="1" y="28" width="46" height="2"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

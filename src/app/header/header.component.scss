@@ -4,11 +4,7 @@ header {
   position: fixed;
   z-index: 1000;
   top: 0;
-  padding: 20px 30px;
-  width: calc(100vw - 60px);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  width: 100vw;
   transition: .5s ease-in-out;
   &.dark-header {
     background: $primary-text-color;
@@ -19,6 +15,12 @@ header {
   img {
     height: 30px;
     cursor: pointer;
+  }
+  .container {
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 }
 #nav-icon {
@@ -86,6 +88,9 @@ header {
 }
 nav {
   position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   z-index: 100;
   background: linear-gradient(150deg, $primary-text-color 25%, lighten($primary-text-color, 15%) 65%, lighten($primary-text-color, 25%) 85%);
   width: 100%;
@@ -99,13 +104,14 @@ nav {
   }
   a {
     display: block;
-    padding: 20px;
+    padding: 15px;
     text-decoration: none;
     color: lighten($primary-text-color, 40%);
+    font-weight: 900;
     &.active, &:hover {
       &.my-work {
-        background: -webkit-linear-gradient(150deg,#9b4be3 15%,#7857fc 70%,#b8cffc 94%);
-        background: linear-gradient(150deg,#9b4be3 15%,#7857fc 70%,#b8cffc 94%);
+        background: -webkit-linear-gradient(150deg,#ae74e3 15%,#9981f9 70%,#b8cffc 94%);
+        background: linear-gradient(150deg,#ae74e3 15%,#9981f9 70%,#b8cffc 94%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
       }
@@ -116,23 +122,33 @@ nav {
         -webkit-text-fill-color: transparent;
       }
       &.reach-out {
-        background: -webkit-linear-gradient(150deg,#53f 15%,#05d5ff 70%,#a6ffcb 94%);
-        background: linear-gradient(150deg,#53f 15%,#05d5ff 70%,#a6ffcb 94%);
+        background: -webkit-linear-gradient(150deg,#5e77f9 15%,#05d5ff 70%,#a6ffcb 94%);
+        background: linear-gradient(150deg,#5e77f9 15%,#05d5ff 70%,#a6ffcb 94%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
       }
     }
   }
-  img {
-    max-width: 180px;
-    margin: 3em 0 1em;
+  li {
+    img {
+      display: none;
+    }
   }
 }
 
 @media only screen and (min-width: 768px) {
   nav {
-    img {
-      margin: 2em 0 1em;
+    ul {
+      display: flex;
+      width: 80vw;
+      justify-content: space-between;
+    }
+    li {
+      img {
+        display: block;
+        height: 70px;
+        margin: 20px auto;
+      }
     }
   }
 }

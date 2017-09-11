@@ -1,16 +1,20 @@
-<header class="container" [ngClass]="{'page-scroll-header': isScrolled && !showMenu, 'dark-header': currPos > 100 && !showMenu}">
-  <img src="assets/logo.svg" routerLink="/">
-  <div (click)="toggleMenu()" id="nav-icon" [ngClass]="showMenu ? 'open' : ''">
-    <span></span>
-    <span></span>
-    <span></span>
+<header [ngClass]="{'page-scroll-header': isScrolled && !showMenu, 'dark-header': currPos > 100 && !showMenu}">
+  <div class="container">
+    <img src="assets/logo.svg" routerLink="/">
+    <div (click)="toggleMenu()" id="nav-icon" [ngClass]="showMenu ? 'open' : ''">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
   </div>
 </header>
 <nav [ngClass]="showMenu ? 'show-menu' : ''">
-  <img src="../../assets/me_circle.png" alt="Josh Diaz" routerLink="/">
   <ul>
     <li *ngFor="let item of menuItems">
-      <a routerLink="{{item.link}}" routerLinkActive="active" [ngClass]="item.className">{{item.name}}</a>
+      <a routerLink="{{item.link}}" routerLinkActive="active" [ngClass]="item.className">
+        <img src="../../assets/{{item.icon}}" class="menu-icon">
+        <span>{{item.name}}</span>
+      </a>
     </li>
   </ul>
 </nav>
