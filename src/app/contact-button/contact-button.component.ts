@@ -1,4 +1,4 @@
-import { Component, ViewChild, OnInit } from '@angular/core';
+import { Component, ViewChild, OnInit, Input } from '@angular/core';
 import { MdDialog, MD_DIALOG_DATA } from '@angular/material';
 import { ContactModalComponent } from '../contact-modal/contact-modal.component';
 
@@ -8,7 +8,8 @@ import { ContactModalComponent } from '../contact-modal/contact-modal.component'
   styleUrls: ['./contact-button.component.scss']
 })
 export class ContactButtonComponent implements OnInit {
-
+  @Input() page: string;
+  
   constructor(public dialog: MdDialog) { }
 
   openContactModal() {

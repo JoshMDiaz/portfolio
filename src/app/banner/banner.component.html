@@ -5,7 +5,7 @@
       <div class="banner-content">
         <h2>{{mainBannerText}}</h2>
         <h3>{{secondaryBannerText}}</h3>
-        <contact-button *ngIf="page === 'home' || page === 'reach-out'"></contact-button>
+        <contact-button page="{{page}}" *ngIf="page === 'home' || page === 'reach-out'"></contact-button>
       </div>
     </div>
   </div>
