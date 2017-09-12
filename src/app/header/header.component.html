@@ -9,12 +9,24 @@
   </div>
 </header>
 <nav [ngClass]="showMenu ? 'show-menu' : ''">
-  <ul>
-    <li *ngFor="let item of menuItems">
-      <a routerLink="{{item.link}}" routerLinkActive="active" [ngClass]="item.className">
-        <img src="../../assets/{{item.icon}}" class="menu-icon">
-        <span>{{item.name}}</span>
-      </a>
-    </li>
-  </ul>
+  <div class="container menu-content">
+    <ul>
+      <li *ngFor="let item of menuItems">
+        <a routerLink="{{item.link}}" routerLinkActive="active" [ngClass]="item.className">
+          <img src="../../assets/{{item.icon}}" class="menu-icon">
+          <span>{{item.name}}</span>
+        </a>
+      </li>
+    </ul>
+    <div class="social-media">
+      <span class="socicon-linkedin"></span>
+      <span class="socicon-github"></span>
+      <span class="socicon-facebook"></span>
+      <span class="socicon-twitter"></span>
+    </div>
+    <p class="contact-email">
+      <span>I'm available at</span>
+      <a href="mailto:joshua.michael.diaz@gmail.com">joshua.michael.diaz@gmail.com</a>
+    </p>
+  </div>
 </nav>

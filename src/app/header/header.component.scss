@@ -92,10 +92,9 @@ nav {
   justify-content: center;
   align-items: center;
   z-index: 100;
-  background: linear-gradient(150deg, $primary-text-color 25%, lighten($primary-text-color, 15%) 65%, lighten($primary-text-color, 25%) 85%);
+  background: $primary-text-color;
   width: 100%;
   text-align: center;
-  font-size: 2em;
   height: 100vh;
   top: -100vh;
   transition: .5s ease-in-out;
@@ -103,10 +102,10 @@ nav {
     top: 0;
   }
   a {
+    color: lighten($primary-text-color, 40%);
     display: block;
     padding: 15px;
     text-decoration: none;
-    color: lighten($primary-text-color, 40%);
     font-weight: 900;
     &.active, &:hover {
       &.my-work {
@@ -129,18 +128,38 @@ nav {
       }
     }
   }
+  ul {
+    font-size: 2em;
+  }
   li {
     img {
       display: none;
+    }
+  }
+  .social-media {
+    margin: 30px 0;
+  }
+  .contact-email {
+    color: lighten($primary-text-color, 40%);
+    font-size: 1.5em;
+    span {
+      width: 100%;
+      display: block;
+    }
+    a {
+      font-size: .8em;
+      color: lighten($primary-text-color, 60%);
     }
   }
 }
 
 @media only screen and (min-width: 768px) {
   nav {
+    .menu-content {
+      width: 100%;
+    }
     ul {
       display: flex;
-      width: 80vw;
       justify-content: space-between;
     }
     li {
@@ -148,6 +167,19 @@ nav {
         display: block;
         height: 70px;
         margin: 20px auto;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  nav {
+    ul {
+      font-size: 2.5em;
+    }
+    li {
+      img {
+        height: 80px;
       }
     }
   }
