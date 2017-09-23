@@ -25,7 +25,7 @@ header {
 }
 #nav-icon {
   width: 30px;
-  height: 25px;
+  height: 15px;
   position: relative;
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
@@ -108,25 +108,32 @@ nav {
     padding: 15px;
     text-decoration: none;
     font-weight: 900;
-    &.active, &:hover {
-      &.my-work {
-        background: -webkit-linear-gradient(150deg,#ae74e3 15%,#9981f9 70%,#b8cffc 94%);
-        background: linear-gradient(150deg,#ae74e3 15%,#9981f9 70%,#b8cffc 94%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+    transition: .25s ease-in-out;
+    position: relative;
+    &:before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      background-color: $white-color;
+      visibility: hidden;
+      -webkit-transform: scaleX(0);
+      transform: scaleX(0);
+      -webkit-transition: all 0.3s ease-in-out 0s;
+      transition: all 0.3s ease-in-out 0s;
+    }
+    &:hover {
+      color: $white-color;
+      &:before {
+        visibility: visible;
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1);
       }
-      &.about-me {
-        background: -webkit-linear-gradient(150deg,#ff6a33 15%,#ffaa05 70%,#f5ffa6 94%);
-        background: linear-gradient(150deg,#ff6a33 15%,#ffaa05 70%,#f5ffa6 94%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-      }
-      &.reach-out {
-        background: -webkit-linear-gradient(150deg,#5e77f9 15%,#05d5ff 70%,#a6ffcb 94%);
-        background: linear-gradient(150deg,#5e77f9 15%,#05d5ff 70%,#a6ffcb 94%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-      }
+    }
+    &.active {
+      color: $white-color;
     }
   }
   ul {
@@ -152,17 +159,11 @@ nav {
       display: flex;
       align-items: flex-end;
       justify-content: center;
+      width: 160px;
+      margin: auto;
     }
     span:first-child {
       margin-right: 7px;
-    }
-  }
-  .social-media, .contact-email {
-    a {
-      transition: .25s ease-in-out;
-      &:hover {
-        color: $white-color;
-      }
     }
   }
 }
@@ -181,6 +182,14 @@ nav {
         display: block;
         height: 70px;
         margin: 20px auto;
+        opacity: .6;
+      }
+      a {
+        &.active, &:hover {
+          img {
+            opacity: 1;
+          }
+        }
       }
     }
   }
