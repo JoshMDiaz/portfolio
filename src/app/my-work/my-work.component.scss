@@ -1,0 +1,24 @@
+@import "../../scss/colors";
+
+.card-list {
+  padding: 2em 30px;
+  background: $gray-background-color;
+  portfolio-tile {
+    margin-bottom: 2em;
+    display: block;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .card-list {
+    display: flex;
+    justify-content: space-between;
+    portfolio-tile {
+      flex: 1;
+      margin: 1em 1%;
+    }
+  }
+}

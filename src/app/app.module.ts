@@ -22,6 +22,7 @@ import { StripesBgComponent } from './stripes-bg/stripes-bg.component';
 import { MyWorkDetailComponent } from './my-work-detail/my-work-detail.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { BannerComponent } from './banner/banner.component';
+import { PortfolioTileComponent } from './portfolio-tile/portfolio-tile.component';
 
 // Routes
 const appRoutes: Routes = [
@@ -51,7 +52,8 @@ const appRoutes: Routes = [
     HomeComponent,
     MyWorkDetailComponent,
     PageNotFoundComponent,
-    BannerComponent
+    BannerComponent,
+    PortfolioTileComponent
   ],
   imports: [
     BrowserModule,

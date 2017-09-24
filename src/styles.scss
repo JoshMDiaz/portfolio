@@ -50,6 +50,14 @@ button {
   }
 }
 
+// Material Design Defaults
+.mat-radio-button.mat-accent.mat-radio-checked .mat-radio-outer-circle {
+  border-color: $blue-color;
+}
+.mat-radio-button.mat-accent .mat-radio-inner-circle {
+  background-color: $blue-color;
+}
+
 @media only screen and (min-width: 768px) {
   .section-header-icon {
     margin: -20px auto 20px;

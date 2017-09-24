@@ -1,0 +1,40 @@
+@import "../../scss/colors";
+
+md-card {
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  .logo {
+    img {
+      width: 100%;
+    }
+  }
+  .overlay {
+    background: linear-gradient(150deg,#8532cf 15%,#6643f4 94%);
+    right: -110%;
+    position: absolute;
+    z-index: 10;
+    width: calc(100% - 30px);
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 1em 15px;
+    transition: .5s ease-in-out;
+    h4 {
+      color: $white-color;
+      font-size: 1.5em;
+      margin-bottom: 1em;
+    }
+  }
+  &:hover {
+    .overlay {
+      right: 0;
+    }
+  }
+}

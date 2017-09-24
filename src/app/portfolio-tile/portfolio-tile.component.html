@@ -1,0 +1,14 @@
+<a href="/my-work/{{id}}">
+  <md-card>
+    <div class="logo">
+      <img *ngIf="logo" src="../assets/{{logo}}" alt="{{title}}">
+      <h3 *ngIf="!logo">{{title}}</h3>
+    </div>
+    <div class="overlay">
+      <div>
+        <h4>{{title}}</h4>
+        <a href="/my-work/{{id}}"><button md-raised-button>Details</button></a>
+      </div>
+    </div>
+  </md-card>
+</a>
