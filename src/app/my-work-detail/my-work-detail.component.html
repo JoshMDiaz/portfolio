@@ -1,8 +1,11 @@
 <app-header></app-header>
 <md-toolbar></md-toolbar>
 <div class="container">
-  <h2>{{currentProject.title}}</h2>
+  <div class="logo">
+    <a href="{{currentProject.link}}" target="_blank">
+      <img src="{{currentProject.logo}}" alt="{{currentProject.title}}">
+    </a>
+  </div>
+  <h2 class="section-header">{{currentProject.title}}</h2>
 </div>
-<p>link: {{currentProject.link}}</p>
-<p>logo: {{currentProject.logo}}</p>
 <app-footer></app-footer>
