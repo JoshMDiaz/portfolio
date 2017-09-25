@@ -1,0 +1,28 @@
+@import "../../scss/colors";
+
+md-card {
+  margin: 1em auto;
+}
+.mat-dialog-container {
+  max-width: 450px;
+}
+.mat-form-field {
+  width: 100%;
+}
+button {
+  margin-top: 1em;
+}
+.mat-radio-button {
+  display: block;
+  margin: 1em 0;
+}
+.contact-section {
+  padding: 30px;
+  background: $gray-background-color;
+}
+
+@media only screen and (min-width: 768px) {
+  md-card {
+    width: 400px;
+  }
+}

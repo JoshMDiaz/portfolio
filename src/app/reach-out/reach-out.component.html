@@ -1,4 +1,34 @@
 <app-header></app-header>
 <app-banner page="reach-out" main-banner-text="Reach out" secondary-banner-text="I'd love to know how I can help."></app-banner>
-
+<h2 class="section-header">What's on Your Mind?</h2>
+<div class="contact-section">
+  <md-card>
+    <form class="hire-me-form">
+      <md-form-field>
+        <input type="text" mdInput placeholder="Name" [(ngModel)]="contact.name" name="contact.name" [formControl]="nameFormControl" required>
+        <md-error *ngIf="nameFormControl.hasError('required')">
+          Name is required
+        </md-error>
+      </md-form-field>
+      <md-form-field>
+        <input mdInput placeholder="Email" [formControl]="emailFormControl" [(ngModel)]="contact.email" name="contact.email" required>
+        <md-error *ngIf="emailFormControl.hasError('pattern')">
+          Please enter a valid email address
+        </md-error>
+        <md-error *ngIf="emailFormControl.hasError('required')">
+          Email is required
+        </md-error>
+      </md-form-field>
+      <md-radio-group [(ngModel)]="contact.jobType" [ngModelOptions]="{standalone: true}">
+        <md-radio-button *ngFor="let type of jobTypes" [value]="type.value">
+          {{type.name}}
+        </md-radio-button>
+      </md-radio-group>
+      <md-form-field>
+        <textarea type="text" mdInput placeholder="Message" [(ngModel)]="contact.message" name="contact.message"></textarea>
+      </md-form-field>
+      <button md-raised-button color="primary" (click)="send(contact)">Send</button>
+    </form>
+  </md-card>
+</div>
 <app-footer></app-footer>
