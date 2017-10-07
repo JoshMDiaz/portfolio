@@ -1,6 +1,7 @@
-<header [ngClass]="{'page-scroll-header': isScrolled && !showMenu, 'dark-header': currPos > 100 && !showMenu}">
+<header [ngClass]="{'page-scroll-header': isScrolled && !showMenu, 'dark-header': currPos > 150 && !showMenu}">
   <div class="container">
-    <img src="assets/logo.svg" routerLink="/">
+    <img *ngIf="(currPos <= 150 || !currPos) && !showMenu" src="assets/logo.svg" routerLink="/">
+    <img *ngIf="currPos > 150 || showMenu" src="assets/logo-white.svg" routerLink="/">
     <div (click)="toggleMenu()" id="nav-icon" [ngClass]="showMenu ? 'open' : ''">
       <span></span>
       <span></span>

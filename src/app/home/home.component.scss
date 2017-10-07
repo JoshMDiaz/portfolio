@@ -1,5 +1,6 @@
 @import '../../scss/colors';
 
+// Navigation Tiles
 .overlay {
   color: $white-color;
   font-size: 2em;
@@ -18,8 +19,54 @@
     background: linear-gradient(to bottom, $tile-reach-out-color, lighten($tile-reach-out-color, 10%));
   }
 }
+// What To Expect From Me
+.icon-bullet-points {
+  text-align: center;
+  color: lighten($primary-text-color, 20%);
+  i.material-icons {
+    font-size: 4em;
+    width: auto !important;
+  }
+  div {
+    &:not(:last-child) {
+      margin-bottom: 3em;
+    }
+  }
+  span {
+    font-size: 1.5em;
+    margin-top: .5em;
+  }
+  div, span {
+    display: block;
+  }
+}
+// Testimonials
+.carousel-container {
+  overflow: hidden;
+  position: relative;
+  height: 300px;
+  .slide {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 70px;
+  }
+  .slide-1 {
+    left: 110%;
+  }
+  .slide-2 {
+    left: 220%;
+  }
+  h2.quote {
+    line-height: 1.3em;
+    font-size: 1.5em;
+  }
+}
 
 @media only screen and (max-width: 767px) {
+  // Navigation Tiles
   .mat-grid-tile {
     height: 200px !important;
     top: 0 !important;
@@ -38,6 +85,7 @@
 }
 
 @media only screen and (min-width: 768px) {
+  // Navigation Tiles
   .overlay {
     font-size: 3em;
     transform: translateX(110%);
@@ -52,11 +100,21 @@
       }
     }
   }
-}
-
-@media only screen and (min-width: 1201px) {
   .list-card {
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.14), 0 4px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 5px 0 rgba(0, 0, 0, 0.12);
-    margin: 3em 0;
+  }
+  // What to Expect From Me
+  .icon-bullet-points {
+    display: flex;
+    justify-content: space-around;
+    i.material-icons {
+      font-size: 2.5em;
+    }
+    div {
+      margin-bottom: 0;
+    }
+    span {
+      font-size: 1.2em;
+    }
   }
 }

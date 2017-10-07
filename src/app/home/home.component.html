@@ -1,16 +1,60 @@
 <app-header></app-header>
 <app-banner page="home" main-banner-text="Josh M Diaz" secondary-banner-text="Design. Development. Experience."></app-banner>
-<div class="container">
-  <h2 class="section-header">Take a Look Around</h2>
-  <md-icon class="section-header-icon">keyboard_arrow_down</md-icon>
-  <div class="list-card">
-    <md-grid-list cols="3" rows="1" rowHeight="300px">
-      <md-grid-tile *ngFor="let tile of tiles" [colspan]="1" routerLink="{{tile.link}}" [style.background]="tile.img || tile.color" [style.background-repeat]="'no-repeat'" [style.background-position]="'50% 100%'">
-        <div class="overlay {{tile.overlayClass}}">
-          {{tile.text}}
+<div class="section">
+  <div class="container">
+    <h2 class="section-header">Take a Look Around</h2>
+    <i class="material-icons" class="section-header-icon material-icons">keyboard_arrow_down</i>
+    <div class="list-card">
+      <md-grid-list cols="3" rows="1" rowHeight="300px">
+        <md-grid-tile *ngFor="let tile of tiles" [colspan]="1" routerLink="{{tile.link}}" [style.background]="tile.img || tile.color" [style.background-repeat]="'no-repeat'" [style.background-position]="'50% 100%'">
+          <div class="overlay {{tile.overlayClass}}">
+            {{tile.text}}
+          </div>
+        </md-grid-tile>
+      </md-grid-list>
+    </div>
+  </div>
+</div>
+<div class="gray-section">
+  <div class="container">
+    <h2 class="section-header">What You Can Expect From Me</h2>
+    <div class="icon-bullet-points">
+      <div>
+        <i class="material-icons">attach_money</i>
+        <span>Affordable</span>
+      </div>
+      <div>
+        <i class="material-icons">phone_iphone</i>
+        <span>Mobile Friendly</span>
+      </div>
+      <div>
+        <i class="material-icons">thumb_up</i>
+        <span>Easygoing</span>
+      </div>
+      <div>
+        <i class="material-icons">timer</i>
+        <span>Prompt</span>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="section">
+  <div class="container">
+    <h2 class="section-header">What They Say About Me</h2>
+    <div class="testimonials">
+      <!-- <div class="carousel-container">
+        <div class="slide slide-{{idx}}" *ngFor="let slide of slides; let idx = index">
+          <h2 class="quote">{{slide.quote}}</h2>
+          <p class="author">{{slide.author}}</p>
         </div>
-      </md-grid-tile>
-    </md-grid-list>
+        <div class="image-navigation-controls">
+          <img *ngFor="let slide of slides; let idx = index" src="{{slide.image}}" alt="{{slide.author}}" [ngClass]="{'active' : index + 1 === slide.id}">
+        </div>
+        <i class="material-icons">chevron_left</i>
+        <i class="material-icons">chevron_right</i>
+      </div> -->
+
+    </div>
   </div>
 </div>
 <app-footer></app-footer>
