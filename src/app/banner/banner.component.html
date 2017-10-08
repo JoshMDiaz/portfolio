@@ -4,8 +4,8 @@
     <div class="banner-content-wrapper">
       <div class="banner-content">
         <h2>{{mainBannerText}}</h2>
-        <h3>{{secondaryBannerText}}</h3>
-        <contact-button page="{{page}}" *ngIf="page === 'home' || page === 'reach-out'"></contact-button>
+        <h3><span [innerHTML]="secondaryBannerText"></span></h3>
+        <contact-button section="banner" *ngIf="page === 'home' || page === 'reach-out'"></contact-button>
       </div>
     </div>
   </div>

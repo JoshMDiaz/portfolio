@@ -9,13 +9,12 @@ button {
   background: -webkit-linear-gradient(right, $blue-color, $green-color);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  letter-spacing: 1px;
-  &.reach-out {
+  &.banner {
     background: none;
     border: 2px solid transparent;
-    border-image: linear-gradient(to right, $white-color, darken($white-color, 10%));
+    border-image: linear-gradient(to right, $purple-color, darken($purple-color, 10%));
     border-image-slice: 1;
-    background: -webkit-linear-gradient(right, $white-color, darken($white-color, 10%));
+    background: -webkit-linear-gradient(right, $purple-color, darken($purple-color, 10%));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }

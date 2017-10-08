@@ -8,8 +8,8 @@ import { ContactModalComponent } from '../contact-modal/contact-modal.component'
   styleUrls: ['./contact-button.component.scss']
 })
 export class ContactButtonComponent implements OnInit {
-  @Input() page: string;
-  
+  @Input() section?: string;
+
   constructor(public dialog: MdDialog) { }
 
   openContactModal() {

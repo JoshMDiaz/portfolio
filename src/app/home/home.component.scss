@@ -20,9 +20,12 @@
   }
 }
 // What To Expect From Me
-.icon-bullet-points {
+.icon-bullet-points-row {
   text-align: center;
   color: lighten($primary-text-color, 20%);
+  &:not(:first-child) {
+    margin-top: 3em;
+  }
   i.material-icons {
     font-size: 4em;
     width: auto !important;
@@ -106,12 +109,19 @@
   // What to Expect From Me
   .icon-bullet-points {
     display: flex;
+    flex-wrap: wrap;
+  }
+  .icon-bullet-points-row {
+    width: 100%;
+    display: flex;
     justify-content: space-around;
     i.material-icons {
       font-size: 2.5em;
     }
     div {
-      margin-bottom: 0;
+      &:not(:last-child) {
+        margin-bottom: 3em;
+      }
     }
     span {
       font-size: 1.2em;

@@ -9,11 +9,10 @@ footer {
 }
 .cta-section {
   padding: 50px;
-  background: url('../../assets/footer_bg.png');
+  background: linear-gradient(150deg, $primary-text-color 15%, darken($primary-text-color, 10%) 65%, darken($primary-text-color, 20%) 93%);
   h3, h4 {
     color: $white-color;
     margin-bottom: 30px;
-    letter-spacing: 1px;
     line-height: 1.3em;
   }
   h3 {

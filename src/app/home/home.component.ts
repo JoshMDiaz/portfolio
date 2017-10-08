@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NgxCarousel } from 'ngx-carousel';
 
 @Component({
   selector: 'app-home',
@@ -7,7 +8,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
   tiles: Array<{}>;
-  slides: Array<{}>;
+  testimonials: Array<{}>;
+  testimonialsCarousel: NgxCarousel;
 
   constructor() {
     this.tiles = [
@@ -39,7 +41,7 @@ export class HomeComponent implements OnInit {
         link: '/reach-out'
       },
     ];
-    this.slides = [
+    this.testimonials = [
       {
         id: 1,
         quote: 'I needed a redesign done for my website. I spoke to Josh, worked out what we needed done, and decided on a fair price. We love our new website! Definitely a good choice for us.',
@@ -65,6 +67,16 @@ export class HomeComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.testimonialsCarousel = {
+      grid: {xs: 1, sm: 1, md: 1, lg: 1, all: 0},
+      slide: 1,
+      speed: 400,
+      interval: 7000,
+      point: true,
+      load: 2,
+      touch: true,
+      loop: true
+    }
   }
 
 }

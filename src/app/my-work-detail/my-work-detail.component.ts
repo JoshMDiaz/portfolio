@@ -10,6 +10,7 @@ export class MyWorkDetailComponent implements OnInit {
   projectsArr: Array<{
     id: number,
     title: string,
+    bannerSecondaryText: string,
     logo: string,
     link: string
   }>;
@@ -31,18 +32,21 @@ export class MyWorkDetailComponent implements OnInit {
       {
         id: 1,
         title: 'Taylored Ties',
+        bannerSecondaryText: 'Website.&nbsp;&nbsp;eCommerce.&nbsp;&nbsp;Small Business.',
         logo: '../../assets/taylored-ties.png',
         link: 'http://tayloredties.com'
       },
       {
         id: 2,
         title: 'Shyanne Diaz',
+        bannerSecondaryText: 'Website.&nbsp;&nbsp;Blog.&nbsp;&nbsp;Small Business.',
         logo: '../../assets/shyanne-diaz.png',
         link: 'http://shyannediaz.com'
       },
       {
         id: 3,
         title: 'Ronin Dragon Karate',
+        bannerSecondaryText: 'Website.&nbsp;&nbsp;Karate.&nbsp;&nbsp;Small Business.',
         logo: '../../assets/rdk.png',
         link: 'http://rdkutah.com'
       }

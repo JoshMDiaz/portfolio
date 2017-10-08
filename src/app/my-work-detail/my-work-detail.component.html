@@ -1,11 +1,10 @@
 <app-header></app-header>
-<md-toolbar></md-toolbar>
+<app-banner page="work-detail" main-banner-text="{{currentProject.title}}" secondary-banner-text="{{currentProject.bannerSecondaryText}}"></app-banner>
 <div class="container">
   <div class="logo">
     <a href="{{currentProject.link}}" target="_blank">
       <img src="{{currentProject.logo}}" alt="{{currentProject.title}}">
     </a>
   </div>
-  <h2 class="section-header">{{currentProject.title}}</h2>
 </div>
 <app-footer></app-footer>

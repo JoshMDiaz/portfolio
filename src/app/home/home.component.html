@@ -1,5 +1,5 @@
 <app-header></app-header>
-<app-banner page="home" main-banner-text="Josh M Diaz" secondary-banner-text="Design. Development. Experience."></app-banner>
+<app-banner page="home" main-banner-text="Josh M Diaz" secondary-banner-text="Design.&nbsp;&nbsp;Development.&nbsp;&nbsp;Experience."></app-banner>
 <div class="section">
   <div class="container">
     <h2 class="section-header">Take a Look Around</h2>
@@ -19,21 +19,41 @@
   <div class="container">
     <h2 class="section-header">What You Can Expect From Me</h2>
     <div class="icon-bullet-points">
-      <div>
-        <i class="material-icons">attach_money</i>
-        <span>Affordable</span>
+      <div class="icon-bullet-points-row">
+        <div>
+          <i class="material-icons">attach_money</i>
+          <span>Affordable</span>
+        </div>
+        <div>
+          <i class="material-icons">phone_iphone</i>
+          <span>Mobile Friendly</span>
+        </div>
+        <div>
+          <i class="material-icons">lightbulb_outline</i>
+          <span>Modern Design</span>
+        </div>
+        <div>
+          <i class="material-icons">work</i>
+          <span>Experience</span>
+        </div>
       </div>
-      <div>
-        <i class="material-icons">phone_iphone</i>
-        <span>Mobile Friendly</span>
-      </div>
-      <div>
-        <i class="material-icons">thumb_up</i>
-        <span>Easygoing</span>
-      </div>
-      <div>
-        <i class="material-icons">timer</i>
-        <span>Prompt</span>
+      <div class="icon-bullet-points-row">
+        <div>
+          <i class="material-icons">motorcycle</i>
+          <span>Driven</span>
+        </div>
+        <div>
+          <i class="material-icons">screen_share</i>
+          <span>Organized</span>
+        </div>
+        <div>
+          <i class="material-icons">thumb_up</i>
+          <span>Easygoing</span>
+        </div>
+        <div>
+          <i class="material-icons">timer</i>
+          <span>Prompt</span>
+        </div>
       </div>
     </div>
   </div>
@@ -42,18 +62,15 @@
   <div class="container">
     <h2 class="section-header">What They Say About Me</h2>
     <div class="testimonials">
-      <!-- <div class="carousel-container">
-        <div class="slide slide-{{idx}}" *ngFor="let slide of slides; let idx = index">
-          <h2 class="quote">{{slide.quote}}</h2>
-          <p class="author">{{slide.author}}</p>
-        </div>
-        <div class="image-navigation-controls">
-          <img *ngFor="let slide of slides; let idx = index" src="{{slide.image}}" alt="{{slide.author}}" [ngClass]="{'active' : index + 1 === slide.id}">
-        </div>
-        <i class="material-icons">chevron_left</i>
-        <i class="material-icons">chevron_right</i>
-      </div> -->
-
+      <ngx-carousel [inputs]="testimonialsCarousel">
+        <ngx-item NgxCarouselItem *ngFor="let testimonial of testimonials">
+          <h3>{{testimonial.quote}}</h3>
+          <p>- {{testimonial.author}}</p>
+          <img src="{{testimonial.image}}" alt="{{testimonial.author}}">
+        </ngx-item>
+        <button NgxCarouselPrev class='leftRs'>&lt;</button>
+        <button NgxCarouselNext class='rightRs'>&gt;</button>
+      </ngx-carousel>
     </div>
   </div>
 </div>
