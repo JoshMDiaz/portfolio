@@ -22,11 +22,12 @@
 // What To Expect From Me
 .icon-bullet-points-row {
   text-align: center;
-  color: lighten($primary-text-color, 20%);
+  color: $blue-color;
   &:not(:first-child) {
     margin-top: 3em;
   }
   i.material-icons {
+    color: $white-color;
     font-size: 4em;
     width: auto !important;
   }
@@ -41,30 +42,6 @@
   }
   div, span {
     display: block;
-  }
-}
-// Testimonials
-.carousel-container {
-  overflow: hidden;
-  position: relative;
-  height: 300px;
-  .slide {
-    position: absolute;
-    top: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0 70px;
-  }
-  .slide-1 {
-    left: 110%;
-  }
-  .slide-2 {
-    left: 220%;
-  }
-  h2.quote {
-    line-height: 1.3em;
-    font-size: 1.5em;
   }
 }
 

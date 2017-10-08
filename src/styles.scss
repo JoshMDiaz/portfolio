@@ -10,6 +10,11 @@ body {
   font-size: 16px;
   color: $primary-text-color;
 }
+p {
+  font-size: 1.4em;
+  line-height: 1.5em;
+  margin-bottom: 1em;
+}
 .container {
   max-width: 1200px;
   margin: auto;
@@ -34,11 +39,21 @@ button {
 }
 
 // Sections
-.section, .gray-section {
+.section, .gray-section, .black-section {
   padding: 50px 0;
 }
 .gray-section {
   background: $gray-background-color;
+  .section-header {
+    margin-top: 0;
+  }
+}
+.black-section {
+  background: $black-background-color;
+  color: $white-color;
+  .section-header {
+    margin-top: 0;
+  }
 }
 .section-header {
   font-size: 2em;

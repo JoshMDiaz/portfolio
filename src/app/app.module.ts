@@ -25,6 +25,7 @@ import { MyWorkDetailComponent } from './my-work-detail/my-work-detail.component
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { BannerComponent } from './banner/banner.component';
 import { PortfolioTileComponent } from './portfolio-tile/portfolio-tile.component';
+import { TestimonialsComponent } from './testimonials/testimonials.component';
 
 // Routes
 const appRoutes: Routes = [
@@ -55,7 +56,8 @@ const appRoutes: Routes = [
     MyWorkDetailComponent,
     PageNotFoundComponent,
     BannerComponent,
-    PortfolioTileComponent
+    PortfolioTileComponent,
+    TestimonialsComponent
   ],
   imports: [
     BrowserModule,
