@@ -36,6 +36,11 @@ button {
       color: lighten($primary-text-color, 20%) !important;
     }
   }
+  &.mat-fab {
+    .mat-button-wrapper {
+      line-height: 0;
+    }
+  }
 }
 
 // Sections
