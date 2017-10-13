@@ -5,7 +5,7 @@ import { AppComponent } from './app.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
-import {MdInputModule, MdMenuModule, MdSidenavModule, MdCardModule, MdGridListModule, MdTabsModule, MdButtonModule, MdIconModule, MdProgressSpinnerModule, MdDialogModule, MdSnackBarModule, MdRadioModule, MdToolbarModule} from '@angular/material';
+import {MdInputModule, MdMenuModule, MdSidenavModule, MdCardModule, MdGridListModule, MdTabsModule, MdButtonModule, MdIconModule, MdProgressSpinnerModule, MdProgressBarModule, MdDialogModule, MdSnackBarModule, MdRadioModule, MdToolbarModule} from '@angular/material';
 import { NgxCarouselModule } from 'ngx-carousel';
 import 'hammerjs';
 
@@ -77,6 +77,7 @@ const appRoutes: Routes = [
     MdButtonModule,
     MdIconModule,
     MdProgressSpinnerModule,
+    MdProgressBarModule,
     MdDialogModule,
     MdSnackBarModule,
     MdRadioModule,

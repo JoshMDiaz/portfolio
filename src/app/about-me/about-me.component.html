@@ -12,7 +12,21 @@
 </div>
 <div class="section">
   <div class="container">
-    Skills listed here
+    <h2 class="section-header">Boasting My Skills</h2>
+    <md-list>
+      <md-list-item *ngFor="let skill of skills">
+        <md-icon>folder</md-icon>
+        <p>
+          <span> {{skill.name}} </span>
+          <span class="demo-2"> -- {{skill.description}} </span>
+        </p>
+        <md-progress-bar
+          [color]="'primary'"
+          [mode]="'determinate'"
+          [value]="skill.value">
+      </md-progress-bar>
+      </md-list-item>
+    </md-list>
   </div>
 </div>
 <div class="gray-section">
