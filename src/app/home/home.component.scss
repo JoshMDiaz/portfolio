@@ -9,20 +9,12 @@
   width: 100%;
   justify-content: center;
   align-items: center;
-  &.work {
-    background: linear-gradient(to bottom, $tile-work-color, lighten($tile-work-color, 10%));
-  }
-  &.me {
-    background: linear-gradient(to bottom, $tile-me-color, lighten($tile-me-color, 10%));
-  }
-  &.reach-out {
-    background: linear-gradient(to bottom, $tile-reach-out-color, lighten($tile-reach-out-color, 10%));
-  }
+  background: linear-gradient(150deg, $purple-color-2 15%, $purple-color-1 94%);
 }
 // What To Expect From Me
 .icon-bullet-points-row {
   text-align: center;
-  color: $blue-color;
+  color: lighten($purple-color-2, 15%);
   &:not(:first-child) {
     margin-top: 3em;
   }
@@ -69,7 +61,7 @@
   .overlay {
     font-size: 3em;
     transform: translateX(110%);
-    transition: .3s ease;
+    transition: .5s ease-in-out;
   }
   .mat-grid-tile {
     overflow: hidden;

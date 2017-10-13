@@ -3,18 +3,18 @@ button {
   font-size: 1.9em;
   background: none;
   border: 2px solid transparent;
-  border-image: linear-gradient(to right, $blue-color, $green-color);
+  border-image: linear-gradient(to right, lighten($purple-color-2, 10%), lighten($purple-color-1, 10%));
   border-image-slice: 1;
   padding: 15px 30px;
-  background: -webkit-linear-gradient(right, $blue-color, $green-color);
+  background: -webkit-linear-gradient(right, lighten($purple-color-2, 10%), lighten($purple-color-1, 10%));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   &.banner {
     background: none;
     border: 2px solid transparent;
-    border-image: linear-gradient(to right, $purple-color, darken($purple-color, 10%));
+    border-image: linear-gradient(to right, $purple-color-2, $purple-color-1);
     border-image-slice: 1;
-    background: -webkit-linear-gradient(right, $purple-color, darken($purple-color, 10%));
+    background: -webkit-linear-gradient(right, $purple-color-2, $purple-color-1);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
