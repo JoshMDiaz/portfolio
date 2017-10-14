@@ -9,7 +9,7 @@
   width: 100%;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(150deg, $purple-color-2 15%, $purple-color-1 94%);
+  @include purple-gradient-background();
 }
 // What To Expect From Me
 .icon-bullet-points-row {

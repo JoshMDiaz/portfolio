@@ -3,9 +3,11 @@ $white-color: #FFF;
 $gray-background-color: #f6f9fc;
 $black-background-color: #111;
 
-$tile-work-color: rgba(50, 208, 179, 0.6);
-$tile-me-color: rgba(66, 107, 199, 0.6);
-$tile-reach-out-color: rgba(50,141,208,.6);
-
 $purple-color-1: #6643f4;
 $purple-color-2: #8532cf;
+@mixin purple-gradient-background() {
+  background: linear-gradient(150deg, $purple-color-2 15%, $purple-color-1 94%);
+  background: -webkit-linear-gradient(150deg, $purple-color-2 15%, $purple-color-1 94%);
+  background: -o-linear-gradient(150deg, $purple-color-2 15%, $purple-color-1 94%);
+  background: -moz-linear-gradient(150deg, $purple-color-2 15%, $purple-color-1 94%);
+}

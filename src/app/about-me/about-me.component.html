@@ -5,8 +5,8 @@
     <div class="about-me-section">
       <h2 class="section-header">Some Things About Me</h2>
       <p>My name is Josh Diaz. I am a professional Web and App Developer. I specialize in Front-end development. I have a passion for the UI/UX aspect as well as the programming aspect of devloping beautiful products.</p>
-      <p>I have been programming since I could walk. Just kidding, I was never a child prodigy. I have, however, always had the desire to excel at whatever I was passionate about. Fortunately, I love this work.</p>
-      <p>I attended Utah Valley University and studied Internet Technologies in the Digital Media program. I am continually looking for freelance work. I love building web and mobile applications. I am always trying to improve my skillset so that I can produce the best products as possible. If you are interested in creating a website, mobile application or simply adding to the value of a website that you currently have, then please contact me to get started!</p>
+      <p>I have been programming since I could walk. Just kidding, I was never a child prodigy. I have, however, always had the desire to excel at whatever I have been passionate about. Fortunately, I love this work.</p>
+      <p>I attended Utah Valley University and studied Internet Technologies in the Digital Media program. I am continually looking for freelance work. I love building web and mobile applications. I am always trying to improve my skillset so I can produce the best products possible. If you are interested in creating a website, mobile application or simply adding to the value of a website that you currently have, then please contact me to get started!</p>
     </div>
   </div>
 </div>
@@ -15,16 +15,15 @@
     <h2 class="section-header">Boasting My Skills</h2>
     <md-list>
       <md-list-item *ngFor="let skill of skills">
-        <md-icon>folder</md-icon>
         <p>
-          <span> {{skill.name}} </span>
-          <span class="demo-2"> -- {{skill.description}} </span>
+          <md-icon>done</md-icon>
+          <span> {{skill.name}}</span>
         </p>
         <md-progress-bar
           [color]="'primary'"
           [mode]="'determinate'"
           [value]="skill.value">
-      </md-progress-bar>
+        </md-progress-bar>
       </md-list-item>
     </md-list>
   </div>

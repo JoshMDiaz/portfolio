@@ -42,21 +42,24 @@ button {
     }
   }
   &.mat-fab.mat-primary, &.mat-mini-fab.mat-primary, &.mat-raised-button.mat-primary {
-    background: $purple-color-1;
+    @include purple-gradient-background();
   }
 }
 
 // Form
 .mat-focused {
   .mat-form-field-placeholder {
-    color: $purple-color-1;
+    color: $purple-color-2;
   }
   .mat-form-field-ripple {
-    background-color: $purple-color-1;
+    background-color: $purple-color-2;
   }
   .mat-form-field-placeholder.mat-form-field-float .mat-form-field-required-marker {
-    color: $purple-color-1;
+    color: $purple-color-2;
   }
+}
+.mat-progress-bar-fill::after {
+  @include purple-gradient-background();
 }
 
 // Sections
@@ -65,9 +68,6 @@ button {
 }
 .gray-section {
   background: $gray-background-color;
-  .section-header {
-    margin-top: 0;
-  }
 }
 .black-section {
   background: $black-background-color;
@@ -78,7 +78,7 @@ button {
 }
 .section-header {
   font-size: 2em;
-  margin: 1em;
+  margin:  0 1em 1em;
   text-align: center;
 }
 .section-header-icon {

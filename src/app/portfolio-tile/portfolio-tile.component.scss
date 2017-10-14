@@ -13,7 +13,7 @@ md-card {
     }
   }
   .overlay {
-    background: linear-gradient(150deg, $purple-color-2 15%, $purple-color-1 94%);
+    @include purple-gradient-background();
     right: -110%;
     position: absolute;
     z-index: 10;

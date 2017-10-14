@@ -15,7 +15,7 @@
     margin-bottom: 10px;
   }
   p.author {
-    background: -webkit-linear-gradient(right, $purple-color-2 15%, $purple-color-1 94%);
+    @include purple-gradient-background();
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-bottom: 1em;
@@ -35,11 +35,11 @@
     font-size: 1.5em;
   }
   .leftRs {
-    background: linear-gradient(150deg, $purple-color-2 15%, $purple-color-1 94%);
+    @include purple-gradient-background();
     left: 0;
   }
   .rightRs {
-    background: linear-gradient(-150deg, $purple-color-2 15%, $purple-color-1 94%);
+    @include purple-gradient-background();
     right: 0;
   }
   .testimonial-content {
