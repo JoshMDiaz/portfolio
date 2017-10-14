@@ -53,22 +53,19 @@ export class HeaderComponent implements OnInit {
         id: 1,
         link: '/my-work',
         name: 'My Work',
-        className: 'my-work',
-        icon: 'work_icon.svg'
+        className: 'my-work'
       },
       {
         id: 2,
         link: '/about-me',
         name: 'This is Me',
-        className: 'about-me',
-        icon: 'person_icon1.png'
+        className: 'about-me'
       },
       {
         id: 3,
         link: '/reach-out',
         name: 'Reach Out',
-        className: 'reach-out',
-        icon: 'contact_icon.svg'
+        className: 'reach-out'
       }
     ]
   }
