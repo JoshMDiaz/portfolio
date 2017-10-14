@@ -41,6 +41,9 @@ button {
       line-height: 0;
     }
   }
+  &.mat-button, &.mat-icon-button, &.mat-raised-button {
+    color: $purple-color-1;
+  }
   &.mat-fab.mat-primary, &.mat-mini-fab.mat-primary, &.mat-raised-button.mat-primary {
     @include purple-gradient-background();
   }
