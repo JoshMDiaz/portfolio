@@ -1,11 +1,16 @@
 @import "../../scss/colors";
 
 .card-list {
-  portfolio-tile {
+  portfolio-tile, md-card.design-concept {
     margin-bottom: 2em;
     display: block;
     &:last-child {
       margin-bottom: 0;
+    }
+  }
+  md-card.design-concept {
+    img {
+      width: 100%;
     }
   }
 }
@@ -14,9 +19,18 @@
   .card-list {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     portfolio-tile {
       flex: 1;
       margin: 1em 1%;
+    }
+    &.flex-start {
+      justify-content: flex-start;
+      md-card.design-concept {
+        margin: 1em 1% !important;
+        width: 29%;
+        padding: 10px;
+      }
     }
   }
 }

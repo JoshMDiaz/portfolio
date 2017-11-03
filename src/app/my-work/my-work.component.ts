@@ -6,10 +6,25 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./my-work.component.scss']
 })
 export class MyWorkComponent implements OnInit {
+  concepts: Array<{}>;
+  imageUrlBase: string = '../../assets/concepts/';
 
   constructor() { }
 
   ngOnInit() {
+    this.concepts = [
+      {
+        id: 1,
+        title: '',
+        description: '',
+        images: [
+          {
+            url: this.imageUrlBase + '',
+            alt: ''
+          }
+        ]
+      }
+    ];
   }
 
 }
