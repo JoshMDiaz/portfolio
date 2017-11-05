@@ -69,6 +69,12 @@ button {
 .section, .gray-section, .black-section {
   padding: 100px 0;
 }
+.section {
+  &.purple-gradient-background {
+    @include purple-gradient-background();
+    color: $white-color;
+  }
+}
 .gray-section {
   background: $gray-background-color;
 }

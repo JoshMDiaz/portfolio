@@ -26,6 +26,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { BannerComponent } from './banner/banner.component';
 import { PortfolioTileComponent } from './portfolio-tile/portfolio-tile.component';
 import { TestimonialsComponent } from './testimonials/testimonials.component';
+import { GalleryModalComponent } from './gallery-modal/gallery-modal.component';
 
 // Routes
 const appRoutes: Routes = [
@@ -57,7 +58,8 @@ const appRoutes: Routes = [
     PageNotFoundComponent,
     BannerComponent,
     PortfolioTileComponent,
-    TestimonialsComponent
+    TestimonialsComponent,
+    GalleryModalComponent
   ],
   imports: [
     BrowserModule,

@@ -5,34 +5,20 @@
     <h2 class="section-header">Check Out These Websites</h2>
     <i class="section-header-icon material-icons">keyboard_arrow_down</i>
     <div class="card-list">
+      <!-- TODO: change this @Input to be one object and create an array to loop through for this -->
       <portfolio-tile title="Taylored Ties" logo="../assets/taylored-ties.png" id="1"></portfolio-tile>
       <portfolio-tile title="Shyanne Diaz" logo="../assets/shyanne-diaz.png" id="2"></portfolio-tile>
       <portfolio-tile title="Ronin Dragon Karate" logo="../assets/rdk.png" id="3"></portfolio-tile>
     </div>
   </div>
 </div>
-<div class="section">
+<div class="section purple-gradient-background">
   <div class="container">
     <h2 class="section-header">Some of My Design Concepts</h2>
     <i class="section-header-icon material-icons">keyboard_arrow_down</i>
-    <div class="card-list flex-start">
-      <!-- TODO: repeat md-cards -->
+    <div class="card-list">
       <!-- TODO: repeat open into gallery modal to see bigger image -->
-      <md-card class="design-concept">
-        <img src="../../assets/concepts/photo-1.png" alt="test">
-      </md-card>
-      <md-card class="design-concept">
-        <img src="../../assets/concepts/photo-1.png" alt="test">
-      </md-card>
-      <md-card class="design-concept">
-        <img src="../../assets/concepts/photo-1.png" alt="test">
-      </md-card>
-      <md-card class="design-concept">
-        <img src="../../assets/concepts/photo-1.png" alt="test">
-      </md-card>
-      <md-card class="design-concept">
-        <img src="../../assets/concepts/photo-1.png" alt="test">
-      </md-card>
+      <gallery-modal *ngFor="let concept of concepts" [image]="concept"></gallery-modal>
     </div>
   </div>
 </div>
