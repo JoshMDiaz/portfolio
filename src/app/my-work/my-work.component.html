@@ -18,7 +18,7 @@
     <i class="section-header-icon material-icons">keyboard_arrow_down</i>
     <div class="card-list">
       <!-- TODO: repeat open into gallery modal to see bigger image -->
-      <gallery-modal *ngFor="let concept of concepts" [image]="concept"></gallery-modal>
+      <gallery-list-item *ngFor="let concept of concepts" [image]="concept"></gallery-list-item>
     </div>
   </div>
 </div>

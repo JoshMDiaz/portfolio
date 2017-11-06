@@ -1,16 +1,11 @@
 @import "../../scss/colors";
 
 .card-list {
-  portfolio-tile, gallery-modal {
+  portfolio-tile, gallery-list-item {
     margin-bottom: 2em;
     display: block;
     &:last-child {
       margin-bottom: 0;
-    }
-  }
-  gallery-modal {
-    img {
-      width: 100%;
     }
   }
 }
@@ -24,11 +19,12 @@
       flex: 1;
       margin: 1em 1%;
     }
-    gallery-modal {
-      margin: 1em 1% !important;
+    gallery-list-item {
+      margin: 0 !important;
       padding: 10px;
       flex: 1;
-      flex-basis: 25%;
+      flex-basis: 31%;
+      display: flex;
     }
   }
 }
