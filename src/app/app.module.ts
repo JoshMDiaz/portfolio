@@ -27,6 +27,7 @@ import { BannerComponent } from './banner/banner.component';
 import { PortfolioTileComponent } from './portfolio-tile/portfolio-tile.component';
 import { TestimonialsComponent } from './testimonials/testimonials.component';
 import { GalleryListItemComponent } from './gallery-list-item/gallery-list-item.component';
+import { GalleryModalComponent } from './gallery-modal/gallery-modal.component';
 
 // Routes
 const appRoutes: Routes = [
@@ -59,7 +60,8 @@ const appRoutes: Routes = [
     BannerComponent,
     PortfolioTileComponent,
     TestimonialsComponent,
-    GalleryListItemComponent
+    GalleryListItemComponent,
+    GalleryModalComponent
   ],
   imports: [
     BrowserModule,
@@ -87,7 +89,8 @@ const appRoutes: Routes = [
     NgxCarouselModule
   ],
   entryComponents: [
-    ContactModalComponent
+    ContactModalComponent,
+    GalleryModalComponent
   ],
   providers: [],
   schemas: [

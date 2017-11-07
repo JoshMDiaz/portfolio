@@ -6,25 +6,18 @@
   overflow-x: hidden;
   min-height: 100vh;
   display: flex;
-  .banner-content-wrapper {
-    position: absolute;
-    width: 400px;
-    left: calc(50vw - 200px);
-    top: calc(50vh - 50px);
-  }
   .banner-content {
     z-index: 10;
     text-align: center;
     animation: .75s ease-in-out zoomIn;
     h2 {
-      font-size: 2em;
-      line-height: 1.1em;
+      font-size: 3em;
       text-transform: uppercase;
       font-family: 'Khula', sans-serif;
     }
     h3 {
       margin: 1em 0;
-      font-size: 1.1em;
+      font-size: 1.5em;
       line-height: 1.5em;
       font-weight: 300;
       @include purple-gradient-background();
@@ -38,7 +31,10 @@
   .banner {
     .banner-content {
       h2 {
-        font-size: 2.8em;
+        font-size: 4em;
+      }
+      h3 {
+        font-size: 2em;
       }
     }
   }
@@ -46,16 +42,12 @@
 
 @media only screen and (min-width: 768px) {
   .banner {
-    .banner-content-wrapper {
-      width: 700px;
-      left: calc(50vw - 350px);
-    }
     .banner-content {
       h2 {
-        font-size: 4em;
+        font-size: 5em;
       }
       h3 {
-        font-size: 1.7em;
+        font-size: 2.5em;
       }
     }
   }

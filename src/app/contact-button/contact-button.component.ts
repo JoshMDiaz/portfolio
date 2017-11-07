@@ -14,9 +14,7 @@ export class ContactButtonComponent implements OnInit {
 
   openContactModal() {
     this.dialog.open(ContactModalComponent, {
-      data: {
-        test: 'this is a test'
-      }
+      data: {}
     });
   }
 

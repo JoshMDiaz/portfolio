@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { MdDialog, MD_DIALOG_DATA } from '@angular/material';
+import { GalleryModalComponent } from '../gallery-modal/gallery-modal.component';
 
 @Component({
   selector: 'gallery-list-item',
@@ -12,11 +13,16 @@ export class GalleryListItemComponent implements OnInit {
     alt: string
   };
 
-  constructor() {
+  constructor(public dialog: MdDialog) {
+  }
+
+  openGalleryModal() {
+    this.dialog.open(GalleryModalComponent, {
+      data: this.image
+    });
   }
 
   ngOnChanges() {
-    console.log(this.image);
 
   }
 

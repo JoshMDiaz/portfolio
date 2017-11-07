@@ -110,6 +110,9 @@ button {
   background: $primary-text-color;
   height: 70px;
 }
+md-dialog-container {
+  max-height: 80vh;
+}
 
 @media only screen and (min-width: 768px) {
   .section-header {
