@@ -113,6 +113,9 @@ button {
 md-dialog-container {
   max-height: 80vh;
 }
+.mat-dialog-container {
+  max-width: 500px !important;
+}
 
 @media only screen and (min-width: 768px) {
   .section-header {

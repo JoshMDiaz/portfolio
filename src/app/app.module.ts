@@ -13,21 +13,24 @@ import 'hammerjs';
 // Pages
 import { HomeComponent } from './home/home.component';
 import { MyWorkComponent } from './my-work/my-work.component';
+import { MyWorkDetailComponent } from './my-work-detail/my-work-detail.component';
 import { AboutMeComponent } from './about-me/about-me.component';
 import { ReachOutComponent } from './reach-out/reach-out.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 // Custom Components
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { ContactModalComponent } from './contact-modal/contact-modal.component';
 import { ContactButtonComponent } from './contact-button/contact-button.component';
 import { StripesBgComponent } from './stripes-bg/stripes-bg.component';
-import { MyWorkDetailComponent } from './my-work-detail/my-work-detail.component';
-import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { BannerComponent } from './banner/banner.component';
 import { PortfolioTileComponent } from './portfolio-tile/portfolio-tile.component';
 import { TestimonialsComponent } from './testimonials/testimonials.component';
 import { GalleryListItemComponent } from './gallery-list-item/gallery-list-item.component';
 import { GalleryModalComponent } from './gallery-modal/gallery-modal.component';
+
+// Services
+import { MyWorkService } from './my-work/my-work.service';
 
 // Routes
 const appRoutes: Routes = [
@@ -92,7 +95,7 @@ const appRoutes: Routes = [
     ContactModalComponent,
     GalleryModalComponent
   ],
-  providers: [],
+  providers: [MyWorkService],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA
   ],

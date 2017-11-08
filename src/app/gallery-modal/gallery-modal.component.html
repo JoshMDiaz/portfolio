@@ -1,2 +1,9 @@
-<img src="{{data.url}}.png" alt="{{data.alt}}">
-<p>{{data.description}}</p>
+<ngx-carousel [inputs]="galleryCarousel">
+  <ngx-item NgxCarouselItem *ngFor="let concept of concepts">
+    <div class="gallery-content">
+      <img src="{{concept.url}}" alt="{{concept.alt}}">
+    </div>
+  </ngx-item>
+  <button md-fab NgxCarouselPrev class='leftRs' color="primary">&lt;</button>
+  <button md-fab NgxCarouselNext class='rightRs' color="primary">&gt;</button>
+</ngx-carousel>
