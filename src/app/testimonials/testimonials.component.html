@@ -1,11 +1,11 @@
 <div class="testimonials">
   <ngx-carousel [inputs]="testimonialsCarousel">
     <ngx-item NgxCarouselItem *ngFor="let testimonial of testimonials">
-      <div class="testimonial-content">
+      <md-card class="testimonial-content">
         <h3>{{testimonial.quote}}</h3>
         <img src="../../assets/{{testimonial.author}}.jpg" alt="{{testimonial.author}}">
         <p class="author">{{testimonial.author}}</p>
-      </div>
+      </md-card>
     </ngx-item>
     <button md-fab NgxCarouselPrev class='leftRs' color="primary">&lt;</button>
     <button md-fab NgxCarouselNext class='rightRs' color="primary">&gt;</button>
