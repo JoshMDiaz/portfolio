@@ -16,13 +16,17 @@
       font-family: 'Khula', sans-serif;
     }
     h3 {
-      margin: 1em 0;
+      margin: 0;
       font-size: 1.5em;
       line-height: 1.5em;
-      font-weight: 300;
+      font-weight: 900;
       @include purple-gradient-background();
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
+    }
+    contact-button {
+      display: block;
+      margin-top: 2em;
     }
   }
 }

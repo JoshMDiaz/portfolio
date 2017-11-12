@@ -64,6 +64,9 @@ button {
 .mat-progress-bar-fill::after {
   @include purple-gradient-background();
 }
+.mat-progress-bar .mat-progress-bar-element, .mat-progress-bar .mat-progress-bar-fill::after, .mat-progress-bar {
+  height: 10px !important;
+}
 
 // Sections
 .section, .gray-section, .black-section {

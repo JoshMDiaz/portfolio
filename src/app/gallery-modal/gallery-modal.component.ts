@@ -11,20 +11,30 @@ import { NgxCarousel } from 'ngx-carousel';
 export class GalleryModalComponent implements OnInit {
   concepts: Array<{id: number}>;
   galleryCarousel: NgxCarousel;
+  currentSlide: number;
 
   constructor(@Inject(MD_DIALOG_DATA) public data: any, private myWorkService: MyWorkService) { }
 
   getConcepts() {
     this.concepts = this.myWorkService.getConcepts();
+    this.currentSlide = this.data.id;
     this.findConcept(this.data);
   }
 
   findConcept(data) {
     for (let i = 0; i < this.concepts.length; i++) {
       if (this.concepts[i].id === data.id) {
-        console.log(this.concepts[i]);
+        this.setCurrentSlide(i);
       }
     }
+  }
+
+  setCurrentSlide(index) {
+    let strippedArr = this.concepts.splice(index, this.concepts.length - index);
+    for (let i = 0; i < this.concepts.length; i++) {
+      strippedArr.push(this.concepts[i]);
+    }
+    this.concepts = strippedArr;
   }
 
   ngOnInit() {
