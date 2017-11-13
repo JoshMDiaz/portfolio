@@ -90,7 +90,7 @@ button {
 }
 .section-header {
   font-size: 2em;
-  margin:  0 1em 1em;
+  margin: 0 1em 15px;
   text-align: center;
   font-family: 'Khula', sans-serif;
 }
@@ -118,6 +118,20 @@ md-dialog-container {
 }
 .mat-dialog-container {
   max-width: 500px !important;
+}
+
+// Slider
+.testimonials {
+  .som[_ngcontent-c9]   .ngxcarousel[_ngcontent-c9]   .ngxcarousel-inner[_ngcontent-c9] {
+    overflow: visible !important;
+  }
+}
+
+// Footer
+app-footer {
+  display: block;
+  background: linear-gradient(150deg, $primary-text-color 15%, darken($primary-text-color, 10%) 65%, darken($primary-text-color, 20%) 93%);
+  border-top: 1px solid $gray-background-color;
 }
 
 @media only screen and (min-width: 768px) {

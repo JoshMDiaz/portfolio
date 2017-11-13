@@ -144,10 +144,10 @@ nav {
     &:before {
       content: "";
       position: absolute;
-      width: 100%;
+      width: 50%;
       height: 2px;
       bottom: 0;
-      left: 0;
+      left: 25%;
       background-color: $white-color;
       visibility: hidden;
       -webkit-transform: scaleX(0);
