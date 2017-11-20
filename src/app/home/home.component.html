@@ -19,41 +19,9 @@
   <div class="container">
     <h2 class="section-header">What You Can Expect From Me</h2>
     <div class="icon-bullet-points">
-      <div class="icon-bullet-points-row">
-        <div>
-          <i class="material-icons">attach_money</i>
-          <span>Affordable</span>
-        </div>
-        <div>
-          <i class="material-icons">phone_iphone</i>
-          <span>Mobile Friendly</span>
-        </div>
-        <div>
-          <i class="material-icons">lightbulb_outline</i>
-          <span>Modern Design</span>
-        </div>
-        <div>
-          <i class="material-icons">work</i>
-          <span>Experience</span>
-        </div>
-      </div>
-      <div class="icon-bullet-points-row">
-        <div>
-          <i class="material-icons">motorcycle</i>
-          <span>Driven</span>
-        </div>
-        <div>
-          <i class="material-icons">screen_share</i>
-          <span>Organized</span>
-        </div>
-        <div>
-          <i class="material-icons">thumb_up</i>
-          <span>Easygoing</span>
-        </div>
-        <div>
-          <i class="material-icons">timer</i>
-          <span>Prompt</span>
-        </div>
+      <div class="icon-bullet-point" *ngFor="let bullet of bullets">
+          <span><i class="material-icons">{{bullet.icon}}</i> {{bullet.title}}</span>
+          <p class="description">{{bullet.description}}</p>
       </div>
     </div>
   </div>
