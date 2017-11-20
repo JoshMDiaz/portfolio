@@ -40,11 +40,11 @@ export class HomeComponent implements OnInit {
       },
     ];
     this.bullets = [
-      {
-        icon: 'attach_money',
-        title: 'Affordable',
-        description: 'I keep the project a reasonable price range without the price range.'
-      },
+      // {
+      //   icon: 'attach_money',
+      //   title: 'Affordable',
+      //   description: 'I keep the project a reasonable price range without the price range.'
+      // },
       {
         icon: 'phone_iphone',
         title: 'Mobile Friendly',
@@ -55,11 +55,11 @@ export class HomeComponent implements OnInit {
         title: 'Modern Design',
         description: 'This isn\'t the 90\'s. You need a website that is as modern as your business.'
       },
-      {
-        icon: 'work',
-        title: 'Experience',
-        description: 'I bring real world experience to each project and it shows in my work.'
-      },
+      // {
+      //   icon: 'work',
+      //   title: 'Experience',
+      //   description: 'I bring real world experience to each project and it shows in my work.'
+      // },
       {
         icon: 'motorcycle',
         title: 'Driven',
