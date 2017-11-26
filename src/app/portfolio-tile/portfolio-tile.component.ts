@@ -6,9 +6,11 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./portfolio-tile.component.scss']
 })
 export class PortfolioTileComponent implements OnInit {
-  @Input() id: number;
-  @Input() title: string;
-  @Input() logo?: string;
+  @Input() tile: {
+    id: number,
+    title: string,
+    logo?: string
+  };
 
   constructor() { }
 

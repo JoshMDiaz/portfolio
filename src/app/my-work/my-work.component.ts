@@ -8,6 +8,7 @@ import { MyWorkService } from './my-work.service';
 })
 export class MyWorkComponent implements OnInit {
   concepts: Array<{}>;
+  tiles: Array<{}>;
 
   constructor(private myWorkService: MyWorkService) { }
 
@@ -17,6 +18,23 @@ export class MyWorkComponent implements OnInit {
 
   ngOnInit() {
     this.getConcepts();
+    this.tiles = [
+      {
+        id: 1,
+        title: "Taylored Ties",
+        logo: "../assets/taylored-ties.png"
+      },
+      {
+        id: 2,
+        title: "Shyanne Diaz",
+        logo: "../assets/shyanne-diaz.png"
+      },
+      {
+        id: 3,
+        title: "Ronin Dragon Karate",
+        logo: "../assets/rdk.png"
+      }
+    ];
   }
 
 }

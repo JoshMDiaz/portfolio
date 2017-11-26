@@ -1,13 +1,13 @@
-<a href="/my-work/{{id}}">
+<a href="/my-work/{{tile.id}}">
   <md-card>
     <div class="logo">
-      <img *ngIf="logo" src="../assets/{{logo}}" alt="{{title}}">
-      <h3 *ngIf="!logo">{{title}}</h3>
+      <img *ngIf="tile.logo" src="../assets/{{tile.logo}}" alt="{{tile.title}}">
+      <h3 *ngIf="!tile.logo">{{tile.title}}</h3>
     </div>
     <div class="overlay">
       <div>
-        <h4>{{title}}</h4>
-        <a href="/my-work/{{id}}"><button md-raised-button>Details</button></a>
+        <h4>{{tile.title}}</h4>
+        <a href="/my-work/{{tile.id}}"><button md-raised-button>Details</button></a>
       </div>
     </div>
   </md-card>

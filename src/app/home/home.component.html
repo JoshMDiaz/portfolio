@@ -2,8 +2,7 @@
 <app-banner page="home" main-banner-text="Josh M Diaz" secondary-banner-text="Design.&nbsp;&nbsp;Development.&nbsp;&nbsp;Experience."></app-banner>
 <div class="gray-section">
   <div class="container">
-    <h2 class="section-header">Take a Look Around</h2>
-    <i class="material-icons" class="section-header-icon material-icons">keyboard_arrow_down</i>
+    <section-header text="Take a Look Around"></section-header>
     <div class="list-card">
       <md-grid-list cols="3" rows="1" rowHeight="300px">
         <md-grid-tile *ngFor="let tile of tiles" [colspan]="1" routerLink="{{tile.link}}" [style.background]="tile.img || tile.color" [style.background-repeat]="'no-repeat'" [style.background-position]="'50% 50%'" [style.background-size]="'cover'">
@@ -17,7 +16,7 @@
 </div>
 <div class="black-section">
   <div class="container">
-    <h2 class="section-header">What You Can Expect From Me</h2>
+    <section-header text="What You Can Expect From Me"></section-header>
     <div class="icon-bullet-points">
       <div class="icon-bullet-point" *ngFor="let bullet of bullets">
           <span><i class="material-icons">{{bullet.icon}}</i> {{bullet.title}}</span>
@@ -28,7 +27,6 @@
 </div>
 <div class="gray-section">
   <div class="container">
-    <h2 class="section-header">Kind Words About Me</h2>
     <testimonials></testimonials>
   </div>
 </div>
