@@ -1,10 +1,14 @@
 <app-header></app-header>
 <app-banner page="work-detail" main-banner-text="{{currentProject.title}}" secondary-banner-text="{{currentProject.bannerSecondaryText}}"></app-banner>
-<div class="container">
-  <div class="logo">
-    <a href="{{currentProject.link}}" target="_blank">
-      <img src="{{currentProject.logo}}" alt="{{currentProject.title}}">
-    </a>
+<div class="gray-section">
+  <div class="container">
+    <div class="logo">
+      <a href="{{currentProject.link}}" target="_blank">
+        <img src="{{currentProject.logo}}" alt="{{currentProject.title}}">
+      </a>
+    </div>
+    <p>{{currentProject.description}}</p>
+    <p><a href="{{currentProject.link}}" target="_blank">Go check out the site!</a></p>
   </div>
 </div>
 <app-footer></app-footer>

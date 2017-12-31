@@ -31,6 +31,7 @@ import { GalleryModalComponent } from './gallery-modal/gallery-modal.component';
 
 // Services
 import { MyWorkService } from './my-work/my-work.service';
+import { SectionHeaderComponent } from './section-header/section-header.component';
 
 // Routes
 const appRoutes: Routes = [
@@ -64,7 +65,8 @@ const appRoutes: Routes = [
     PortfolioTileComponent,
     TestimonialsComponent,
     GalleryListItemComponent,
-    GalleryModalComponent
+    GalleryModalComponent,
+    SectionHeaderComponent
   ],
   imports: [
     BrowserModule,

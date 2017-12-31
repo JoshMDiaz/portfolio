@@ -12,28 +12,28 @@
   @include purple-gradient-background();
 }
 // What To Expect From Me
-.icon-bullet-points-row {
+.icon-bullet-point {
   text-align: center;
   color: lighten($purple-color-2, 15%);
-  &:not(:first-child) {
-    margin-top: 3em;
-  }
+  margin-top: 3em;
   i.material-icons {
     color: $white-color;
-    font-size: 4em;
+    font-size: 1em;
     width: auto !important;
-  }
-  div {
-    &:not(:last-child) {
-      margin-bottom: 4em;
-    }
+    margin-right: 7px;
   }
   span {
-    font-size: 1.5em;
+    font-size: 2em;
     margin-top: .5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-  div, span {
-    display: block;
+  p {
+    color: $white-color;
+    opacity: .7;
+    font-weight: 300;
+    margin-top: 10px;
   }
 }
 
@@ -79,22 +79,15 @@
   .icon-bullet-points {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 4em;
-  }
-  .icon-bullet-points-row {
-    width: 100%;
-    display: flex;
     justify-content: space-around;
+  }
+  .icon-bullet-point {
+    flex-basis: 29%;
     i.material-icons {
-      font-size: 3.5em;
-    }
-    div {
-      &:not(:last-child) {
-        margin-bottom: 3em;
-      }
+      font-size: 2em;
     }
     span {
-      font-size: 1.2em;
+      font-size: 1.5em;
     }
   }
 }

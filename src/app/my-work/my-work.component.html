@@ -2,20 +2,23 @@
 <app-banner page="my-work" main-banner-text="My work" secondary-banner-text="Some projects I've worked on."></app-banner>
 <div class="gray-section">
   <div class="container">
-    <h2 class="section-header">Check Out These Websites</h2>
-    <i class="section-header-icon material-icons">keyboard_arrow_down</i>
+    <section-header text="Check Out These Websites"></section-header>
     <div class="card-list">
-      <!-- TODO: change this @Input to be one object and create an array to loop through for this -->
-      <portfolio-tile title="Taylored Ties" logo="../assets/taylored-ties.png" id="1" link="http://www.tayloredties.com"></portfolio-tile>
-      <portfolio-tile title="Shyanne Diaz" logo="../assets/shyanne-diaz.png" id="2" link="http://www.shyannediaz.com"></portfolio-tile>
-      <portfolio-tile title="Ronin Dragon Karate" logo="../assets/rdk.png" id="3" link="http://www.rdkutah.com"></portfolio-tile>
+      <portfolio-tile *ngFor="let tile of tiles" [tile]="tile"></portfolio-tile>
     </div>
   </div>
 </div>
-<div class="section purple-gradient-background">
+<div class="section">
   <div class="container">
-    <h2 class="section-header">Some of My Design Concepts</h2>
-    <i class="section-header-icon material-icons">keyboard_arrow_down</i>
+    <section-header text="Mobile App Examples"></section-header>
+    <div>
+      <p class="text-center">Applications under development...</p>
+    </div>
+  </div>
+</div>
+<div class="gray-section">
+  <div class="container">
+    <section-header text="Some of My Design Concepts"></section-header>
     <div class="card-list">
       <gallery-list-item *ngFor="let concept of concepts" [image]="concept"></gallery-list-item>
     </div>
