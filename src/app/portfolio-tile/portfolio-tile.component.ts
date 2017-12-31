@@ -8,6 +8,7 @@ import { Component, OnInit, Input } from '@angular/core';
 export class PortfolioTileComponent implements OnInit {
   @Input() id: number;
   @Input() title: string;
+  @Input() link: string;
   @Input() logo?: string;
 
   constructor() { }
