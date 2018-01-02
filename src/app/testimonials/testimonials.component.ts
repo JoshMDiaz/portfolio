@@ -24,11 +24,11 @@ export class TestimonialsComponent implements OnInit {
       loop: true
     }
     this.testimonials = [
-      {
-        id: 1,
-        quote: 'I needed a redesign done for my website. I spoke to Josh, worked out what we needed done, and decided on a fair price. We love our new website! Definitely a good choice for us.',
-        author: 'Taylor'
-      },
+      // {
+      //   id: 1,
+      //   quote: 'I needed a redesign done for my website. I spoke to Josh, worked out what we needed done, and decided on a fair price. We love our new website! Definitely a good choice for us.',
+      //   author: 'Taylor'
+      // },
       {
         id: 2,
         quote: 'I decided to start my own blog, but didn\'t have the skills to create a nice looking site on my own. Josh was able to turn my vision for my blog into a reality!',
